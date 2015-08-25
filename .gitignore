@@ -1,0 +1,7 @@
+*.dep
+Debug
+settings
+Listings
+Objects
+*.pzheng
+*.uvoptx

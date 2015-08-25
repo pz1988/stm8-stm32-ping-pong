@@ -1,0 +1,20 @@
+---- sx1276_callback_g Matches (19 in 1 files) ----
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):static sx1276_callback_t sx1276_callback_g;
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):	sx1276_callback_g = NULL;
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):		sx1276_callback_g = sx1276_cb;
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):                if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):					sx1276_callback_g(SX1276_RX_ERROR, &sx1276_rx_pkt_g);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):				if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):					sx1276_callback_g(SX1276_RX_ERROR, &sx1276_rx_pkt_g);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):				if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):					sx1276_callback_g(SX1276_RX_ERROR, &sx1276_rx_pkt_g);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):			if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):				sx1276_callback_g(SX1276_RX_DONE, &sx1276_rx_pkt_g);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):			if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):				sx1276_callback_g(SX1276_TX_DONE, NULL);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):                if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):                    sx1276_callback_g(SX1276_CAD_DETECTED, &sx1276_rx_pkt_g);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):                if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):                    sx1276_callback_g(SX1276_CAD_DONE, &sx1276_rx_pkt_g);
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):			if(sx1276_callback_g != NULL){
+Sx1276.c (c:\documents\fw\stm8~stm32 20150723\src\drv\radio):				sx1276_callback_g(SX1276_RX_TIMEOUT, NULL);
