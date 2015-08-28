@@ -55,16 +55,16 @@ int main()
 	 //for debugger
    read_reg = GpioRead( &Led1 );
 	 
-	 led_on(LED2);
-	 read_reg = GpioRead( &Led4 );
-		   //for debugger
-	   GpioInit( &ext_red, TEST_POINT2, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
-	   GpioInit( &ext_green, TEST_POINT3, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
-	 
-	   GpioWrite( &ext_red, 1 );
-	 GpioWrite( &ext_green, 1 ); 
-    //end debugger
-    
+	 led_on(LED0);
+	 read_reg = GpioRead( &Led1 );
+//		   //for debugger
+//	   GpioInit( &ext_red, TEST_POINT2, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
+//	   GpioInit( &ext_green, TEST_POINT3, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
+//	 
+//	   GpioWrite( &ext_red, 1 );
+//	 GpioWrite( &ext_green, 1 ); 
+//    //end debugger
+//    
 	 
 	while(1){
         /** polling all events */

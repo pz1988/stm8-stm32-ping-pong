@@ -97,7 +97,7 @@ uint8_t master_timeout_cnt = 0;
 #define APP_MASTER_SELECT 1
 #define APP_SLAVE_SELECT  0
 
-uint8_t master_slave_select = APP_SLAVE_SELECT;
+uint8_t master_slave_select = APP_MASTER_SELECT;
 uint8_t master_rx_once_flag = 1;
 
 void app_sx1276_event(sx1276_event_t state, void *ptr)

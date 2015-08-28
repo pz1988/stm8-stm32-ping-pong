@@ -33,13 +33,10 @@ Section Cross References
     main.o(i.main) refers to led.o(i.led_init) for led_init
     main.o(i.main) refers to gpio.o(i.GpioRead) for GpioRead
     main.o(i.main) refers to led.o(i.led_on) for led_on
-    main.o(i.main) refers to gpio.o(i.GpioInit) for GpioInit
-    main.o(i.main) refers to gpio.o(i.GpioWrite) for GpioWrite
     main.o(i.main) refers to app.o(i.app_evt) for app_evt
     main.o(i.main) refers to led.o(i.led_evt) for led_evt
     main.o(i.main) refers to board.o(.bss) for I2c
     main.o(i.main) refers to main.o(.data) for read_reg
-    main.o(i.main) refers to main.o(.bss) for ext_red
     gpio.o(i.GpioInit) refers to gpio-board.o(i.GpioMcuInit) for GpioMcuInit
     gpio.o(i.GpioInit) refers to gpio-ioe.o(i.GpioIoeInit) for GpioIoeInit
     gpio.o(i.GpioRead) refers to gpio-board.o(i.GpioMcuRead) for GpioMcuRead
@@ -662,6 +659,7 @@ Removing Unused input sections from the image.
     Removing app.o(.revsh_text), (4 bytes).
     Removing main.o(.rev16_text), (4 bytes).
     Removing main.o(.revsh_text), (4 bytes).
+    Removing main.o(.bss), (24 bytes).
     Removing gpio.o(.rev16_text), (4 bytes).
     Removing gpio.o(.revsh_text), (4 bytes).
     Removing gpio.o(i.GpioRemoveInterrupt), (2 bytes).
@@ -1346,7 +1344,7 @@ Removing Unused input sections from the image.
     Removing dadd.o(.text), (334 bytes).
     Removing cdrcmple.o(.text), (48 bytes).
 
-687 unused section(s) (total 25407 bytes) removed from the image.
+688 unused section(s) (total 25431 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1356,25 +1354,25 @@ Image Symbol Table
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/string/memcmp.c         0x00000000   Number         0  memcmp.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
@@ -1514,8 +1512,8 @@ Image Symbol Table
     .text                                    0x08000248   Section        0  dfltui.o(.text)
     .text                                    0x08000262   Section        0  dfixui.o(.text)
     .text                                    0x08000294   Section        0  llushr.o(.text)
-    .text                                    0x080002b4   Section        0  iusefp.o(.text)
     .text                                    0x080002b4   Section        0  depilogue.o(.text)
+    .text                                    0x080002b4   Section        0  iusefp.o(.text)
     .text                                    0x08000370   Section       36  init.o(.text)
     .text                                    0x08000394   Section        0  llshl.o(.text)
     i.BusFault_Handler                       0x080003b2   Section        0  sysirqhandlers.o(i.BusFault_Handler)
@@ -1647,48 +1645,48 @@ Image Symbol Table
     i.led_off                                0x08002d54   Section        0  led.o(i.led_off)
     i.led_on                                 0x08002d60   Section        0  led.o(i.led_on)
     i.main                                   0x08002d6c   Section        0  main.o(i.main)
-    i.millis                                 0x08002e20   Section        0  sys-tick.o(i.millis)
-    i.sx1276_init                            0x08002e38   Section        0  sx1276.o(i.sx1276_init)
-    i.sx1276_irq_dio0                        0x08002e88   Section        0  sx1276.o(i.sx1276_irq_dio0)
-    i.sx1276_irq_dio1                        0x08003004   Section        0  sx1276.o(i.sx1276_irq_dio1)
-    i.sx1276_irq_dio2                        0x08003060   Section        0  sx1276.o(i.sx1276_irq_dio2)
-    i.sx1276_irq_dio3                        0x08003062   Section        0  sx1276.o(i.sx1276_irq_dio3)
-    i.sx1276_irq_dio4                        0x08003064   Section        0  sx1276.o(i.sx1276_irq_dio4)
-    i.sx1276_read                            0x08003068   Section        0  sx1276.o(i.sx1276_read)
-    i.sx1276_read_burst                      0x080030a0   Section        0  sx1276.o(i.sx1276_read_burst)
-    i.sx1276_read_fifo                       0x080030e8   Section        0  sx1276.o(i.sx1276_read_fifo)
-    i.sx1276_read_pkt_snr_rssi               0x080030fc   Section        0  sx1276.o(i.sx1276_read_pkt_snr_rssi)
-    i.sx1276_receive                         0x08003168   Section        0  sx1276.o(i.sx1276_receive)
-    i.sx1276_reset                           0x080031fc   Section        0  sx1276.o(i.sx1276_reset)
-    i.sx1276_rmw                             0x08003240   Section        0  sx1276.o(i.sx1276_rmw)
-    i.sx1276_send                            0x080032a8   Section        0  sx1276.o(i.sx1276_send)
-    i.sx1276_set_bandwidth                   0x08003304   Section        0  sx1276.o(i.sx1276_set_bandwidth)
-    i.sx1276_set_channel                     0x08003328   Section        0  sx1276.o(i.sx1276_set_channel)
-    i.sx1276_set_coding_rate                 0x08003374   Section        0  sx1276.o(i.sx1276_set_coding_rate)
-    i.sx1276_set_config                      0x08003390   Section        0  sx1276.o(i.sx1276_set_config)
-    i.sx1276_set_crc_mode                    0x08003404   Section        0  sx1276.o(i.sx1276_set_crc_mode)
-    i.sx1276_set_header_mode                 0x08003422   Section        0  sx1276.o(i.sx1276_set_header_mode)
-    i.sx1276_set_low_datarate_optimization   0x08003440   Section        0  sx1276.o(i.sx1276_set_low_datarate_optimization)
-    sx1276_set_low_datarate_optimization     0x08003441   Thumb Code   102  sx1276.o(i.sx1276_set_low_datarate_optimization)
-    i.sx1276_set_mode                        0x080034a6   Section        0  sx1276.o(i.sx1276_set_mode)
-    i.sx1276_set_modem                       0x08003532   Section        0  sx1276.o(i.sx1276_set_modem)
-    i.sx1276_set_preamble                    0x08003560   Section        0  sx1276.o(i.sx1276_set_preamble)
-    i.sx1276_set_preamble_reg                0x08003578   Section        0  sx1276.o(i.sx1276_set_preamble_reg)
-    i.sx1276_set_sf                          0x08003598   Section        0  sx1276.o(i.sx1276_set_sf)
-    i.sx1276_set_symbol_timeout              0x080035e8   Section        0  sx1276.o(i.sx1276_set_symbol_timeout)
-    i.sx1276_set_tx_power                    0x0800360c   Section        0  sx1276.o(i.sx1276_set_tx_power)
-    i.sx1276_timeout_to_symbol               0x08003698   Section        0  sx1276.o(i.sx1276_timeout_to_symbol)
-    i.sx1276_write                           0x080036d0   Section        0  sx1276.o(i.sx1276_write)
-    i.sx1276_write_burst                     0x08003708   Section        0  sx1276.o(i.sx1276_write_burst)
-    i.sx1276_write_fifo                      0x08003750   Section        0  sx1276.o(i.sx1276_write_fifo)
-    i.sys_tick_handler                       0x08003764   Section        0  sys-tick.o(i.sys_tick_handler)
-    sys_tick_handler                         0x08003765   Thumb Code    66  sys-tick.o(i.sys_tick_handler)
-    i.sys_tick_init                          0x080037b4   Section        0  sys-tick.o(i.sys_tick_init)
-    i.uart_init                              0x080037cc   Section        0  uart.o(i.uart_init)
-    i.uart_rx_handler                        0x08003818   Section        0  uart.o(i.uart_rx_handler)
-    i.uart_tx_handler                        0x0800385c   Section        0  uart.o(i.uart_tx_handler)
-    .constdata                               0x080038a8   Section      280  sx1276.o(.constdata)
-    sx1276_symbol_length_tab                 0x080038a8   Data         280  sx1276.o(.constdata)
+    i.millis                                 0x08002de0   Section        0  sys-tick.o(i.millis)
+    i.sx1276_init                            0x08002df8   Section        0  sx1276.o(i.sx1276_init)
+    i.sx1276_irq_dio0                        0x08002e48   Section        0  sx1276.o(i.sx1276_irq_dio0)
+    i.sx1276_irq_dio1                        0x08002fc4   Section        0  sx1276.o(i.sx1276_irq_dio1)
+    i.sx1276_irq_dio2                        0x08003020   Section        0  sx1276.o(i.sx1276_irq_dio2)
+    i.sx1276_irq_dio3                        0x08003022   Section        0  sx1276.o(i.sx1276_irq_dio3)
+    i.sx1276_irq_dio4                        0x08003024   Section        0  sx1276.o(i.sx1276_irq_dio4)
+    i.sx1276_read                            0x08003028   Section        0  sx1276.o(i.sx1276_read)
+    i.sx1276_read_burst                      0x08003060   Section        0  sx1276.o(i.sx1276_read_burst)
+    i.sx1276_read_fifo                       0x080030a8   Section        0  sx1276.o(i.sx1276_read_fifo)
+    i.sx1276_read_pkt_snr_rssi               0x080030bc   Section        0  sx1276.o(i.sx1276_read_pkt_snr_rssi)
+    i.sx1276_receive                         0x08003128   Section        0  sx1276.o(i.sx1276_receive)
+    i.sx1276_reset                           0x080031bc   Section        0  sx1276.o(i.sx1276_reset)
+    i.sx1276_rmw                             0x08003200   Section        0  sx1276.o(i.sx1276_rmw)
+    i.sx1276_send                            0x08003268   Section        0  sx1276.o(i.sx1276_send)
+    i.sx1276_set_bandwidth                   0x080032c4   Section        0  sx1276.o(i.sx1276_set_bandwidth)
+    i.sx1276_set_channel                     0x080032e8   Section        0  sx1276.o(i.sx1276_set_channel)
+    i.sx1276_set_coding_rate                 0x08003334   Section        0  sx1276.o(i.sx1276_set_coding_rate)
+    i.sx1276_set_config                      0x08003350   Section        0  sx1276.o(i.sx1276_set_config)
+    i.sx1276_set_crc_mode                    0x080033c4   Section        0  sx1276.o(i.sx1276_set_crc_mode)
+    i.sx1276_set_header_mode                 0x080033e2   Section        0  sx1276.o(i.sx1276_set_header_mode)
+    i.sx1276_set_low_datarate_optimization   0x08003400   Section        0  sx1276.o(i.sx1276_set_low_datarate_optimization)
+    sx1276_set_low_datarate_optimization     0x08003401   Thumb Code   102  sx1276.o(i.sx1276_set_low_datarate_optimization)
+    i.sx1276_set_mode                        0x08003466   Section        0  sx1276.o(i.sx1276_set_mode)
+    i.sx1276_set_modem                       0x080034f2   Section        0  sx1276.o(i.sx1276_set_modem)
+    i.sx1276_set_preamble                    0x08003520   Section        0  sx1276.o(i.sx1276_set_preamble)
+    i.sx1276_set_preamble_reg                0x08003538   Section        0  sx1276.o(i.sx1276_set_preamble_reg)
+    i.sx1276_set_sf                          0x08003558   Section        0  sx1276.o(i.sx1276_set_sf)
+    i.sx1276_set_symbol_timeout              0x080035a8   Section        0  sx1276.o(i.sx1276_set_symbol_timeout)
+    i.sx1276_set_tx_power                    0x080035cc   Section        0  sx1276.o(i.sx1276_set_tx_power)
+    i.sx1276_timeout_to_symbol               0x08003658   Section        0  sx1276.o(i.sx1276_timeout_to_symbol)
+    i.sx1276_write                           0x08003690   Section        0  sx1276.o(i.sx1276_write)
+    i.sx1276_write_burst                     0x080036c8   Section        0  sx1276.o(i.sx1276_write_burst)
+    i.sx1276_write_fifo                      0x08003710   Section        0  sx1276.o(i.sx1276_write_fifo)
+    i.sys_tick_handler                       0x08003724   Section        0  sys-tick.o(i.sys_tick_handler)
+    sys_tick_handler                         0x08003725   Thumb Code    66  sys-tick.o(i.sys_tick_handler)
+    i.sys_tick_init                          0x08003774   Section        0  sys-tick.o(i.sys_tick_init)
+    i.uart_init                              0x0800378c   Section        0  uart.o(i.uart_init)
+    i.uart_rx_handler                        0x080037d8   Section        0  uart.o(i.uart_rx_handler)
+    i.uart_tx_handler                        0x0800381c   Section        0  uart.o(i.uart_tx_handler)
+    .constdata                               0x08003868   Section      280  sx1276.o(.constdata)
+    sx1276_symbol_length_tab                 0x08003868   Data         280  sx1276.o(.constdata)
     .data                                    0x20000000   Section       47  app.o(.data)
     .data                                    0x2000002f   Section        2  main.o(.data)
     .data                                    0x20000031   Section        1  i2c.o(.data)
@@ -1730,24 +1728,23 @@ Image Symbol Table
     sx1276_rx_preamble_len_g                 0x200000da   Data           2  sx1276.o(.data)
     sx1276_callback_g                        0x200000dc   Data           4  sx1276.o(.data)
     .bss                                     0x200000e0   Section      272  app.o(.bss)
-    .bss                                     0x200001f0   Section       24  main.o(.bss)
-    .bss                                     0x20000208   Section       18  spi.o(.bss)
-    .bss                                     0x2000021c   Section      304  board.o(.bss)
-    .bss                                     0x2000034c   Section       64  gpio-board.o(.bss)
-    GpioIrq                                  0x2000034c   Data          64  gpio-board.o(.bss)
-    .bss                                     0x2000038c   Section      224  hal-sx1276.o(.bss)
-    .bss                                     0x2000046c   Section       24  hal-uart.o(.bss)
-    .bss                                     0x20000484   Section       24  led.o(.bss)
-    .bss                                     0x2000049c   Section       32  sys-tick.o(.bss)
-    sys_tick                                 0x2000049c   Data          32  sys-tick.o(.bss)
-    .bss                                     0x200004bc   Section      440  uart.o(.bss)
-    uart_rx_buf                              0x200004bc   Data         220  uart.o(.bss)
-    uart_tx_buf                              0x20000598   Data         220  uart.o(.bss)
-    .bss                                     0x20000674   Section      284  sx1276.o(.bss)
-    sx1276_rf_g                              0x20000674   Data          12  sx1276.o(.bss)
-    sx1276_rx_buf                            0x20000680   Data         256  sx1276.o(.bss)
-    sx1276_rx_pkt_g                          0x20000780   Data          16  sx1276.o(.bss)
-    STACK                                    0x20000790   Section     1024  startup_stm32l1xx_md.o(STACK)
+    .bss                                     0x200001f0   Section       18  spi.o(.bss)
+    .bss                                     0x20000204   Section      304  board.o(.bss)
+    .bss                                     0x20000334   Section       64  gpio-board.o(.bss)
+    GpioIrq                                  0x20000334   Data          64  gpio-board.o(.bss)
+    .bss                                     0x20000374   Section      224  hal-sx1276.o(.bss)
+    .bss                                     0x20000454   Section       24  hal-uart.o(.bss)
+    .bss                                     0x2000046c   Section       24  led.o(.bss)
+    .bss                                     0x20000484   Section       32  sys-tick.o(.bss)
+    sys_tick                                 0x20000484   Data          32  sys-tick.o(.bss)
+    .bss                                     0x200004a4   Section      440  uart.o(.bss)
+    uart_rx_buf                              0x200004a4   Data         220  uart.o(.bss)
+    uart_tx_buf                              0x20000580   Data         220  uart.o(.bss)
+    .bss                                     0x2000065c   Section      284  sx1276.o(.bss)
+    sx1276_rf_g                              0x2000065c   Data          12  sx1276.o(.bss)
+    sx1276_rx_buf                            0x20000668   Data         256  sx1276.o(.bss)
+    sx1276_rx_pkt_g                          0x20000768   Data          16  sx1276.o(.bss)
+    STACK                                    0x20000778   Section     1024  startup_stm32l1xx_md.o(STACK)
 
     Global Symbols
 
@@ -1955,45 +1952,45 @@ Image Symbol Table
     led_init                                 0x08002d39   Thumb Code    24  led.o(i.led_init)
     led_off                                  0x08002d55   Thumb Code    12  led.o(i.led_off)
     led_on                                   0x08002d61   Thumb Code    12  led.o(i.led_on)
-    main                                     0x08002d6d   Thumb Code   154  main.o(i.main)
-    millis                                   0x08002e21   Thumb Code    24  sys-tick.o(i.millis)
-    sx1276_init                              0x08002e39   Thumb Code    60  sx1276.o(i.sx1276_init)
-    sx1276_irq_dio0                          0x08002e89   Thumb Code   372  sx1276.o(i.sx1276_irq_dio0)
-    sx1276_irq_dio1                          0x08003005   Thumb Code    88  sx1276.o(i.sx1276_irq_dio1)
-    sx1276_irq_dio2                          0x08003061   Thumb Code     2  sx1276.o(i.sx1276_irq_dio2)
-    sx1276_irq_dio3                          0x08003063   Thumb Code     2  sx1276.o(i.sx1276_irq_dio3)
-    sx1276_irq_dio4                          0x08003065   Thumb Code     2  sx1276.o(i.sx1276_irq_dio4)
-    sx1276_read                              0x08003069   Thumb Code    52  sx1276.o(i.sx1276_read)
-    sx1276_read_burst                        0x080030a1   Thumb Code    68  sx1276.o(i.sx1276_read_burst)
-    sx1276_read_fifo                         0x080030e9   Thumb Code    18  sx1276.o(i.sx1276_read_fifo)
-    sx1276_read_pkt_snr_rssi                 0x080030fd   Thumb Code   100  sx1276.o(i.sx1276_read_pkt_snr_rssi)
-    sx1276_receive                           0x08003169   Thumb Code   140  sx1276.o(i.sx1276_receive)
-    sx1276_reset                             0x080031fd   Thumb Code    62  sx1276.o(i.sx1276_reset)
-    sx1276_rmw                               0x08003241   Thumb Code   100  sx1276.o(i.sx1276_rmw)
-    sx1276_send                              0x080032a9   Thumb Code    86  sx1276.o(i.sx1276_send)
-    sx1276_set_bandwidth                     0x08003305   Thumb Code    30  sx1276.o(i.sx1276_set_bandwidth)
-    sx1276_set_channel                       0x08003329   Thumb Code    66  sx1276.o(i.sx1276_set_channel)
-    sx1276_set_coding_rate                   0x08003375   Thumb Code    28  sx1276.o(i.sx1276_set_coding_rate)
-    sx1276_set_config                        0x08003391   Thumb Code   116  sx1276.o(i.sx1276_set_config)
-    sx1276_set_crc_mode                      0x08003405   Thumb Code    30  sx1276.o(i.sx1276_set_crc_mode)
-    sx1276_set_header_mode                   0x08003423   Thumb Code    30  sx1276.o(i.sx1276_set_header_mode)
-    sx1276_set_mode                          0x080034a7   Thumb Code   140  sx1276.o(i.sx1276_set_mode)
-    sx1276_set_modem                         0x08003533   Thumb Code    44  sx1276.o(i.sx1276_set_modem)
-    sx1276_set_preamble                      0x08003561   Thumb Code    14  sx1276.o(i.sx1276_set_preamble)
-    sx1276_set_preamble_reg                  0x08003579   Thumb Code    32  sx1276.o(i.sx1276_set_preamble_reg)
-    sx1276_set_sf                            0x08003599   Thumb Code    76  sx1276.o(i.sx1276_set_sf)
-    sx1276_set_symbol_timeout                0x080035e9   Thumb Code    34  sx1276.o(i.sx1276_set_symbol_timeout)
-    sx1276_set_tx_power                      0x0800360d   Thumb Code   136  sx1276.o(i.sx1276_set_tx_power)
-    sx1276_timeout_to_symbol                 0x08003699   Thumb Code    52  sx1276.o(i.sx1276_timeout_to_symbol)
-    sx1276_write                             0x080036d1   Thumb Code    50  sx1276.o(i.sx1276_write)
-    sx1276_write_burst                       0x08003709   Thumb Code    68  sx1276.o(i.sx1276_write_burst)
-    sx1276_write_fifo                        0x08003751   Thumb Code    18  sx1276.o(i.sx1276_write_fifo)
-    sys_tick_init                            0x080037b5   Thumb Code    16  sys-tick.o(i.sys_tick_init)
-    uart_init                                0x080037cd   Thumb Code    42  uart.o(i.uart_init)
-    uart_rx_handler                          0x08003819   Thumb Code    54  uart.o(i.uart_rx_handler)
-    uart_tx_handler                          0x0800385d   Thumb Code    64  uart.o(i.uart_tx_handler)
-    Region$$Table$$Base                      0x080039c0   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080039e0   Number         0  anon$$obj.o(Region$$Table)
+    main                                     0x08002d6d   Thumb Code   102  main.o(i.main)
+    millis                                   0x08002de1   Thumb Code    24  sys-tick.o(i.millis)
+    sx1276_init                              0x08002df9   Thumb Code    60  sx1276.o(i.sx1276_init)
+    sx1276_irq_dio0                          0x08002e49   Thumb Code   372  sx1276.o(i.sx1276_irq_dio0)
+    sx1276_irq_dio1                          0x08002fc5   Thumb Code    88  sx1276.o(i.sx1276_irq_dio1)
+    sx1276_irq_dio2                          0x08003021   Thumb Code     2  sx1276.o(i.sx1276_irq_dio2)
+    sx1276_irq_dio3                          0x08003023   Thumb Code     2  sx1276.o(i.sx1276_irq_dio3)
+    sx1276_irq_dio4                          0x08003025   Thumb Code     2  sx1276.o(i.sx1276_irq_dio4)
+    sx1276_read                              0x08003029   Thumb Code    52  sx1276.o(i.sx1276_read)
+    sx1276_read_burst                        0x08003061   Thumb Code    68  sx1276.o(i.sx1276_read_burst)
+    sx1276_read_fifo                         0x080030a9   Thumb Code    18  sx1276.o(i.sx1276_read_fifo)
+    sx1276_read_pkt_snr_rssi                 0x080030bd   Thumb Code   100  sx1276.o(i.sx1276_read_pkt_snr_rssi)
+    sx1276_receive                           0x08003129   Thumb Code   140  sx1276.o(i.sx1276_receive)
+    sx1276_reset                             0x080031bd   Thumb Code    62  sx1276.o(i.sx1276_reset)
+    sx1276_rmw                               0x08003201   Thumb Code   100  sx1276.o(i.sx1276_rmw)
+    sx1276_send                              0x08003269   Thumb Code    86  sx1276.o(i.sx1276_send)
+    sx1276_set_bandwidth                     0x080032c5   Thumb Code    30  sx1276.o(i.sx1276_set_bandwidth)
+    sx1276_set_channel                       0x080032e9   Thumb Code    66  sx1276.o(i.sx1276_set_channel)
+    sx1276_set_coding_rate                   0x08003335   Thumb Code    28  sx1276.o(i.sx1276_set_coding_rate)
+    sx1276_set_config                        0x08003351   Thumb Code   116  sx1276.o(i.sx1276_set_config)
+    sx1276_set_crc_mode                      0x080033c5   Thumb Code    30  sx1276.o(i.sx1276_set_crc_mode)
+    sx1276_set_header_mode                   0x080033e3   Thumb Code    30  sx1276.o(i.sx1276_set_header_mode)
+    sx1276_set_mode                          0x08003467   Thumb Code   140  sx1276.o(i.sx1276_set_mode)
+    sx1276_set_modem                         0x080034f3   Thumb Code    44  sx1276.o(i.sx1276_set_modem)
+    sx1276_set_preamble                      0x08003521   Thumb Code    14  sx1276.o(i.sx1276_set_preamble)
+    sx1276_set_preamble_reg                  0x08003539   Thumb Code    32  sx1276.o(i.sx1276_set_preamble_reg)
+    sx1276_set_sf                            0x08003559   Thumb Code    76  sx1276.o(i.sx1276_set_sf)
+    sx1276_set_symbol_timeout                0x080035a9   Thumb Code    34  sx1276.o(i.sx1276_set_symbol_timeout)
+    sx1276_set_tx_power                      0x080035cd   Thumb Code   136  sx1276.o(i.sx1276_set_tx_power)
+    sx1276_timeout_to_symbol                 0x08003659   Thumb Code    52  sx1276.o(i.sx1276_timeout_to_symbol)
+    sx1276_write                             0x08003691   Thumb Code    50  sx1276.o(i.sx1276_write)
+    sx1276_write_burst                       0x080036c9   Thumb Code    68  sx1276.o(i.sx1276_write_burst)
+    sx1276_write_fifo                        0x08003711   Thumb Code    18  sx1276.o(i.sx1276_write_fifo)
+    sys_tick_init                            0x08003775   Thumb Code    16  sys-tick.o(i.sys_tick_init)
+    uart_init                                0x0800378d   Thumb Code    42  uart.o(i.uart_init)
+    uart_rx_handler                          0x080037d9   Thumb Code    54  uart.o(i.uart_rx_handler)
+    uart_tx_handler                          0x0800381d   Thumb Code    64  uart.o(i.uart_tx_handler)
+    Region$$Table$$Base                      0x08003980   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080039a0   Number         0  anon$$obj.o(Region$$Table)
     app_sta                                  0x20000000   Data           1  app.o(.data)
     app_ts                                   0x20000004   Data           4  app.o(.data)
     tx_count                                 0x20000008   Data           4  app.o(.data)
@@ -2025,42 +2022,40 @@ Image Symbol Table
     led_sta_p                                0x200000c5   Data           3  led.o(.data)
     sx1276_config                            0x200000e0   Data          16  app.o(.bss)
     tx_buf                                   0x200000f0   Data         256  app.o(.bss)
-    ext_red                                  0x200001f0   Data          12  main.o(.bss)
-    ext_green                                0x200001fc   Data          12  main.o(.bss)
-    SPI_InitStructure                        0x20000208   Data          18  spi.o(.bss)
-    IrqMpl3115                               0x2000021c   Data          12  board.o(.bss)
-    IrqMag3110                               0x20000228   Data          12  board.o(.bss)
-    GpsPowerEn                               0x20000234   Data          12  board.o(.bss)
-    RadioPushButton                          0x20000240   Data          12  board.o(.bss)
-    BoardPowerDown                           0x2000024c   Data          12  board.o(.bss)
-    NcIoe5                                   0x20000258   Data          12  board.o(.bss)
-    NcIoe6                                   0x20000264   Data          12  board.o(.bss)
-    NcIoe7                                   0x20000270   Data          12  board.o(.bss)
-    NIrqSx9500                               0x2000027c   Data          12  board.o(.bss)
-    Irq1Mma8451                              0x20000288   Data          12  board.o(.bss)
-    Irq2Mma8451                              0x20000294   Data          12  board.o(.bss)
-    TxEnSx9500                               0x200002a0   Data          12  board.o(.bss)
-    Led1                                     0x200002ac   Data          12  board.o(.bss)
-    Led2                                     0x200002b8   Data          12  board.o(.bss)
-    Led3                                     0x200002c4   Data          12  board.o(.bss)
-    Led4                                     0x200002d0   Data          12  board.o(.bss)
-    GpsPps                                   0x200002dc   Data          12  board.o(.bss)
-    GpsRx                                    0x200002e8   Data          12  board.o(.bss)
-    GpsTx                                    0x200002f4   Data          12  board.o(.bss)
-    UsbDetect                                0x20000300   Data          12  board.o(.bss)
-    Wkup1                                    0x2000030c   Data          12  board.o(.bss)
-    DcDcEnable                               0x20000318   Data          12  board.o(.bss)
-    BatVal                                   0x20000324   Data          12  board.o(.bss)
-    I2c                                      0x20000330   Data          28  board.o(.bss)
-    sx1276                                   0x2000038c   Data         144  hal-sx1276.o(.bss)
-    Spi1                                     0x2000041c   Data          56  hal-sx1276.o(.bss)
-    AntSwitchLf                              0x20000454   Data          12  hal-sx1276.o(.bss)
-    AntSwitchHf                              0x20000460   Data          12  hal-sx1276.o(.bss)
-    Uart_tx                                  0x2000046c   Data          12  hal-uart.o(.bss)
-    Uart_rx                                  0x20000478   Data          12  hal-uart.o(.bss)
-    led_timestamp_p                          0x20000484   Data          12  led.o(.bss)
-    led_blink_time_p                         0x20000490   Data          12  led.o(.bss)
-    __initial_sp                             0x20000b90   Data           0  startup_stm32l1xx_md.o(STACK)
+    SPI_InitStructure                        0x200001f0   Data          18  spi.o(.bss)
+    IrqMpl3115                               0x20000204   Data          12  board.o(.bss)
+    IrqMag3110                               0x20000210   Data          12  board.o(.bss)
+    GpsPowerEn                               0x2000021c   Data          12  board.o(.bss)
+    RadioPushButton                          0x20000228   Data          12  board.o(.bss)
+    BoardPowerDown                           0x20000234   Data          12  board.o(.bss)
+    NcIoe5                                   0x20000240   Data          12  board.o(.bss)
+    NcIoe6                                   0x2000024c   Data          12  board.o(.bss)
+    NcIoe7                                   0x20000258   Data          12  board.o(.bss)
+    NIrqSx9500                               0x20000264   Data          12  board.o(.bss)
+    Irq1Mma8451                              0x20000270   Data          12  board.o(.bss)
+    Irq2Mma8451                              0x2000027c   Data          12  board.o(.bss)
+    TxEnSx9500                               0x20000288   Data          12  board.o(.bss)
+    Led1                                     0x20000294   Data          12  board.o(.bss)
+    Led2                                     0x200002a0   Data          12  board.o(.bss)
+    Led3                                     0x200002ac   Data          12  board.o(.bss)
+    Led4                                     0x200002b8   Data          12  board.o(.bss)
+    GpsPps                                   0x200002c4   Data          12  board.o(.bss)
+    GpsRx                                    0x200002d0   Data          12  board.o(.bss)
+    GpsTx                                    0x200002dc   Data          12  board.o(.bss)
+    UsbDetect                                0x200002e8   Data          12  board.o(.bss)
+    Wkup1                                    0x200002f4   Data          12  board.o(.bss)
+    DcDcEnable                               0x20000300   Data          12  board.o(.bss)
+    BatVal                                   0x2000030c   Data          12  board.o(.bss)
+    I2c                                      0x20000318   Data          28  board.o(.bss)
+    sx1276                                   0x20000374   Data         144  hal-sx1276.o(.bss)
+    Spi1                                     0x20000404   Data          56  hal-sx1276.o(.bss)
+    AntSwitchLf                              0x2000043c   Data          12  hal-sx1276.o(.bss)
+    AntSwitchHf                              0x20000448   Data          12  hal-sx1276.o(.bss)
+    Uart_tx                                  0x20000454   Data          12  hal-uart.o(.bss)
+    Uart_rx                                  0x20000460   Data          12  hal-uart.o(.bss)
+    led_timestamp_p                          0x2000046c   Data          12  led.o(.bss)
+    led_blink_time_p                         0x20000478   Data          12  led.o(.bss)
+    __initial_sp                             0x20000b78   Data           0  startup_stm32l1xx_md.o(STACK)
 
 
 
@@ -2070,9 +2065,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000109
 
-  Load Region LR_1 (Base: 0x08000000, Size: 0x00003ac0, Max: 0xffffffff, ABSOLUTE)
+  Load Region LR_1 (Base: 0x08000000, Size: 0x00003a80, Max: 0xffffffff, ABSOLUTE)
 
-    Execution Region ER_RO (Base: 0x08000000, Size: 0x000039e0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_RO (Base: 0x08000000, Size: 0x000039a0, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2233,52 +2228,52 @@ Memory Map of the image
     0x08002d38   0x0000001c   Code   RO         5068    i.led_init          led.o
     0x08002d54   0x0000000c   Code   RO         5069    i.led_off           led.o
     0x08002d60   0x0000000c   Code   RO         5070    i.led_on            led.o
-    0x08002d6c   0x000000b4   Code   RO          230    i.main              main.o
-    0x08002e20   0x00000018   Code   RO         5141    i.millis            sys-tick.o
-    0x08002e38   0x00000050   Code   RO         5291    i.sx1276_init       sx1276.o
-    0x08002e88   0x0000017c   Code   RO         5292    i.sx1276_irq_dio0   sx1276.o
-    0x08003004   0x0000005c   Code   RO         5293    i.sx1276_irq_dio1   sx1276.o
-    0x08003060   0x00000002   Code   RO         5294    i.sx1276_irq_dio2   sx1276.o
-    0x08003062   0x00000002   Code   RO         5295    i.sx1276_irq_dio3   sx1276.o
-    0x08003064   0x00000002   Code   RO         5296    i.sx1276_irq_dio4   sx1276.o
-    0x08003066   0x00000002   PAD
-    0x08003068   0x00000038   Code   RO         5299    i.sx1276_read       sx1276.o
-    0x080030a0   0x00000048   Code   RO         5300    i.sx1276_read_burst  sx1276.o
-    0x080030e8   0x00000012   Code   RO         5301    i.sx1276_read_fifo  sx1276.o
-    0x080030fa   0x00000002   PAD
-    0x080030fc   0x0000006c   Code   RO         5302    i.sx1276_read_pkt_snr_rssi  sx1276.o
-    0x08003168   0x00000094   Code   RO         5304    i.sx1276_receive    sx1276.o
-    0x080031fc   0x00000044   Code   RO         5305    i.sx1276_reset      sx1276.o
-    0x08003240   0x00000068   Code   RO         5306    i.sx1276_rmw        sx1276.o
-    0x080032a8   0x0000005c   Code   RO         5307    i.sx1276_send       sx1276.o
-    0x08003304   0x00000024   Code   RO         5308    i.sx1276_set_bandwidth  sx1276.o
-    0x08003328   0x0000004c   Code   RO         5310    i.sx1276_set_channel  sx1276.o
-    0x08003374   0x0000001c   Code   RO         5311    i.sx1276_set_coding_rate  sx1276.o
-    0x08003390   0x00000074   Code   RO         5312    i.sx1276_set_config  sx1276.o
-    0x08003404   0x0000001e   Code   RO         5313    i.sx1276_set_crc_mode  sx1276.o
-    0x08003422   0x0000001e   Code   RO         5314    i.sx1276_set_header_mode  sx1276.o
-    0x08003440   0x00000066   Code   RO         5316    i.sx1276_set_low_datarate_optimization  sx1276.o
-    0x080034a6   0x0000008c   Code   RO         5317    i.sx1276_set_mode   sx1276.o
-    0x08003532   0x0000002c   Code   RO         5318    i.sx1276_set_modem  sx1276.o
-    0x0800355e   0x00000002   PAD
-    0x08003560   0x00000018   Code   RO         5319    i.sx1276_set_preamble  sx1276.o
-    0x08003578   0x00000020   Code   RO         5320    i.sx1276_set_preamble_reg  sx1276.o
-    0x08003598   0x00000050   Code   RO         5321    i.sx1276_set_sf     sx1276.o
-    0x080035e8   0x00000022   Code   RO         5322    i.sx1276_set_symbol_timeout  sx1276.o
-    0x0800360a   0x00000002   PAD
-    0x0800360c   0x0000008c   Code   RO         5323    i.sx1276_set_tx_power  sx1276.o
-    0x08003698   0x00000038   Code   RO         5324    i.sx1276_timeout_to_symbol  sx1276.o
-    0x080036d0   0x00000038   Code   RO         5325    i.sx1276_write      sx1276.o
-    0x08003708   0x00000048   Code   RO         5326    i.sx1276_write_burst  sx1276.o
-    0x08003750   0x00000012   Code   RO         5327    i.sx1276_write_fifo  sx1276.o
-    0x08003762   0x00000002   PAD
-    0x08003764   0x00000050   Code   RO         5145    i.sys_tick_handler  sys-tick.o
-    0x080037b4   0x00000018   Code   RO         5146    i.sys_tick_init     sys-tick.o
-    0x080037cc   0x0000004c   Code   RO         5211    i.uart_init         uart.o
-    0x08003818   0x00000044   Code   RO         5218    i.uart_rx_handler   uart.o
-    0x0800385c   0x0000004c   Code   RO         5219    i.uart_tx_handler   uart.o
-    0x080038a8   0x00000118   Data   RO         5329    .constdata          sx1276.o
-    0x080039c0   0x00000020   Data   RO         5593    Region$$Table       anon$$obj.o
+    0x08002d6c   0x00000074   Code   RO          230    i.main              main.o
+    0x08002de0   0x00000018   Code   RO         5141    i.millis            sys-tick.o
+    0x08002df8   0x00000050   Code   RO         5291    i.sx1276_init       sx1276.o
+    0x08002e48   0x0000017c   Code   RO         5292    i.sx1276_irq_dio0   sx1276.o
+    0x08002fc4   0x0000005c   Code   RO         5293    i.sx1276_irq_dio1   sx1276.o
+    0x08003020   0x00000002   Code   RO         5294    i.sx1276_irq_dio2   sx1276.o
+    0x08003022   0x00000002   Code   RO         5295    i.sx1276_irq_dio3   sx1276.o
+    0x08003024   0x00000002   Code   RO         5296    i.sx1276_irq_dio4   sx1276.o
+    0x08003026   0x00000002   PAD
+    0x08003028   0x00000038   Code   RO         5299    i.sx1276_read       sx1276.o
+    0x08003060   0x00000048   Code   RO         5300    i.sx1276_read_burst  sx1276.o
+    0x080030a8   0x00000012   Code   RO         5301    i.sx1276_read_fifo  sx1276.o
+    0x080030ba   0x00000002   PAD
+    0x080030bc   0x0000006c   Code   RO         5302    i.sx1276_read_pkt_snr_rssi  sx1276.o
+    0x08003128   0x00000094   Code   RO         5304    i.sx1276_receive    sx1276.o
+    0x080031bc   0x00000044   Code   RO         5305    i.sx1276_reset      sx1276.o
+    0x08003200   0x00000068   Code   RO         5306    i.sx1276_rmw        sx1276.o
+    0x08003268   0x0000005c   Code   RO         5307    i.sx1276_send       sx1276.o
+    0x080032c4   0x00000024   Code   RO         5308    i.sx1276_set_bandwidth  sx1276.o
+    0x080032e8   0x0000004c   Code   RO         5310    i.sx1276_set_channel  sx1276.o
+    0x08003334   0x0000001c   Code   RO         5311    i.sx1276_set_coding_rate  sx1276.o
+    0x08003350   0x00000074   Code   RO         5312    i.sx1276_set_config  sx1276.o
+    0x080033c4   0x0000001e   Code   RO         5313    i.sx1276_set_crc_mode  sx1276.o
+    0x080033e2   0x0000001e   Code   RO         5314    i.sx1276_set_header_mode  sx1276.o
+    0x08003400   0x00000066   Code   RO         5316    i.sx1276_set_low_datarate_optimization  sx1276.o
+    0x08003466   0x0000008c   Code   RO         5317    i.sx1276_set_mode   sx1276.o
+    0x080034f2   0x0000002c   Code   RO         5318    i.sx1276_set_modem  sx1276.o
+    0x0800351e   0x00000002   PAD
+    0x08003520   0x00000018   Code   RO         5319    i.sx1276_set_preamble  sx1276.o
+    0x08003538   0x00000020   Code   RO         5320    i.sx1276_set_preamble_reg  sx1276.o
+    0x08003558   0x00000050   Code   RO         5321    i.sx1276_set_sf     sx1276.o
+    0x080035a8   0x00000022   Code   RO         5322    i.sx1276_set_symbol_timeout  sx1276.o
+    0x080035ca   0x00000002   PAD
+    0x080035cc   0x0000008c   Code   RO         5323    i.sx1276_set_tx_power  sx1276.o
+    0x08003658   0x00000038   Code   RO         5324    i.sx1276_timeout_to_symbol  sx1276.o
+    0x08003690   0x00000038   Code   RO         5325    i.sx1276_write      sx1276.o
+    0x080036c8   0x00000048   Code   RO         5326    i.sx1276_write_burst  sx1276.o
+    0x08003710   0x00000012   Code   RO         5327    i.sx1276_write_fifo  sx1276.o
+    0x08003722   0x00000002   PAD
+    0x08003724   0x00000050   Code   RO         5145    i.sys_tick_handler  sys-tick.o
+    0x08003774   0x00000018   Code   RO         5146    i.sys_tick_init     sys-tick.o
+    0x0800378c   0x0000004c   Code   RO         5211    i.uart_init         uart.o
+    0x080037d8   0x00000044   Code   RO         5218    i.uart_rx_handler   uart.o
+    0x0800381c   0x0000004c   Code   RO         5219    i.uart_tx_handler   uart.o
+    0x08003868   0x00000118   Data   RO         5329    .constdata          sx1276.o
+    0x08003980   0x00000020   Data   RO         5593    Region$$Table       anon$$obj.o
 
 
     Execution Region ER_RW (Base: 0x20000000, Size: 0x000000e0, Max: 0xffffffff, ABSOLUTE)
@@ -2309,23 +2304,22 @@ Memory Map of the image
     0x200000d8   0x00000008   Data   RW         5330    .data               sx1276.o
 
 
-    Execution Region ER_ZI (Base: 0x200000e0, Size: 0x00000ab0, Max: 0xffffffff, ABSOLUTE)
+    Execution Region ER_ZI (Base: 0x200000e0, Size: 0x00000a98, Max: 0xffffffff, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x200000e0   0x00000110   Zero   RW            8    .bss                app.o
-    0x200001f0   0x00000018   Zero   RW          231    .bss                main.o
-    0x20000208   0x00000012   Zero   RW          379    .bss                spi.o
-    0x2000021a   0x00000002   PAD
-    0x2000021c   0x00000130   Zero   RW          745    .bss                board.o
-    0x2000034c   0x00000040   Zero   RW          775    .bss                gpio-board.o
-    0x2000038c   0x000000e0   Zero   RW          955    .bss                hal-sx1276.o
-    0x2000046c   0x00000018   Zero   RW         1058    .bss                hal-uart.o
-    0x20000484   0x00000018   Zero   RW         5072    .bss                led.o
-    0x2000049c   0x00000020   Zero   RW         5149    .bss                sys-tick.o
-    0x200004bc   0x000001b8   Zero   RW         5220    .bss                uart.o
-    0x20000674   0x0000011c   Zero   RW         5328    .bss                sx1276.o
-    0x20000790   0x00000400   Zero   RW          736    STACK               startup_stm32l1xx_md.o
+    0x200001f0   0x00000012   Zero   RW          379    .bss                spi.o
+    0x20000202   0x00000002   PAD
+    0x20000204   0x00000130   Zero   RW          745    .bss                board.o
+    0x20000334   0x00000040   Zero   RW          775    .bss                gpio-board.o
+    0x20000374   0x000000e0   Zero   RW          955    .bss                hal-sx1276.o
+    0x20000454   0x00000018   Zero   RW         1058    .bss                hal-uart.o
+    0x2000046c   0x00000018   Zero   RW         5072    .bss                led.o
+    0x20000484   0x00000020   Zero   RW         5149    .bss                sys-tick.o
+    0x200004a4   0x000001b8   Zero   RW         5220    .bss                uart.o
+    0x2000065c   0x0000011c   Zero   RW         5328    .bss                sx1276.o
+    0x20000778   0x00000400   Zero   RW          736    STACK               startup_stm32l1xx_md.o
 
 
 ==============================================================================
@@ -2350,7 +2344,7 @@ Image component sizes
       1300         40          0          1          0       4857   i2c-board.o
        216         24          0          1          0       3889   i2c.o
        188         28          0          3         24       3237   led.o
-       180         26          0          2         24       3137   main.o
+       116         14          0          2          0       3117   main.o
        140         24          0          0          0       1803   misc.o
        280         12          0          0         18       3291   spi.o
         36          8        244          0       1024        896   startup_stm32l1xx_md.o
@@ -2372,7 +2366,7 @@ Image component sizes
        220         60          0          6        440       2340   uart.o
 
     ----------------------------------------------------------------------
-     13564       1074        556        224       2736     433234   Object Totals
+     13500       1062        556        224       2712     433214   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         28          0          0         19          2          0   (incl. Padding)
 
@@ -2421,15 +2415,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     14260       1090        556        224       2736     425586   Grand Totals
-     14260       1090        556        224       2736     425586   ELF Image Totals
-     14260       1090        556        224          0          0   ROM Totals
+     14196       1078        556        224       2712     425566   Grand Totals
+     14196       1078        556        224       2712     425566   ELF Image Totals
+     14196       1078        556        224          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                14816 (  14.47kB)
-    Total RW  Size (RW Data + ZI Data)              2960 (   2.89kB)
-    Total ROM Size (Code + RO Data + RW Data)      15040 (  14.69kB)
+    Total RO  Size (Code + RO Data)                14752 (  14.41kB)
+    Total RW  Size (RW Data + ZI Data)              2936 (   2.87kB)
+    Total ROM Size (Code + RO Data + RW Data)      14976 (  14.63kB)
 
 ==============================================================================
 
