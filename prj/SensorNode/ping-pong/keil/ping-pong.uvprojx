@@ -50,7 +50,7 @@
           <OutputName>ping-pong</OutputName>
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
-          <CreateHexFile>0</CreateHexFile>
+          <CreateHexFile>1</CreateHexFile>
           <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>.\Listings\</ListingPath>
@@ -309,8 +309,8 @@
               </OCR_RVCT3>
               <OCR_RVCT4>
                 <Type>1</Type>
-                <StartAddress>0x8000000</StartAddress>
-                <Size>0x10000</Size>
+                <StartAddress>0x8003000</StartAddress>
+                <Size>0xd000</Size>
               </OCR_RVCT4>
               <OCR_RVCT5>
                 <Type>1</Type>
@@ -363,7 +363,7 @@
             <useXO>0</useXO>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32_SENSERNODE_DELAY</Define>
+              <Define>STM32_SENSERNODE_DELAY, USE_BOOTLOADER</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\..\src\hal\SensorNode\peripherals;..\..\..\..\src\hal\SensorNode\system;..\..\..\..\src\hal\SensorNode\stm32_board;..\..\..\..\src\hal\SensorNode\stm32_board\cmsis;..\..\..\..\src\hal\SensorNode\stm32_board\cmsis\arm-std;..\..\..\..\src\hal\mcu\stm32;..\..\..\..\src\hal\mcu\stm32\cmsis;..\..\..\..\src\hal\mcu\stm32\STM32L1xx_StdPeriph_Driver\inc;..\..\..\..\src\drv;..\..\..\..\src\drv\radio;..\..\..\..\src\examples\SensorNode\ping-pong</IncludePath>
             </VariousControls>
