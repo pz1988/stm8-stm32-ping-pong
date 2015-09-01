@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\ping-pong.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\ping-pong.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Fri Aug 28 12:33:38 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050106: Last Updated: Tue Sep 01 13:07:55 2015
 <BR><P>
 <H3>Maximum Stack Usage =        436 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -16,7 +16,7 @@ Mutually Recursive functions
  <LI><a href="#[8]">PendSV_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[8]">PendSV_Handler</a><BR>
  <LI><a href="#[9]">SysTick_Handler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[9]">SysTick_Handler</a><BR>
  <LI><a href="#[1c]">ADC1_IRQHandler</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[1c]">ADC1_IRQHandler</a><BR>
- <LI><a href="#[6d]">I2cMcuInit</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[50]">GpioInit</a><BR>
+ <LI><a href="#[69]">I2cMcuInit</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[50]">GpioInit</a><BR>
 </UL>
 <P>
 <H3>
@@ -97,7 +97,7 @@ Global Symbols
 <P><STRONG><a name="[39]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(.text)
 </UL>
-<P><STRONG><a name="[dc]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[d8]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[44]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -107,15 +107,15 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[dd]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[d9]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[de]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[da]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[df]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[db]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[e0]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
+<P><STRONG><a name="[dc]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000D))
 
-<P><STRONG><a name="[e1]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[dd]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$0000000F))
 
 <P><STRONG><a name="[43]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_stm32l1xx_md.o(.text))
 
@@ -265,18 +265,18 @@ Global Symbols
 <P><STRONG><a name="[a]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32l1xx_md.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
-<P><STRONG><a name="[e2]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[de]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[b5]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<P><STRONG><a name="[b1]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
 </UL>
 
-<P><STRONG><a name="[e3]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[df]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[a2]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
+<P><STRONG><a name="[9e]"></a>memcmp</STRONG> (Thumb, 26 bytes, Stack size 12 bytes, memcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = memcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
 <P><STRONG><a name="[46]"></a>__aeabi_ddiv</STRONG> (Thumb, 222 bytes, Stack size 32 bytes, ddiv.o(.text))
@@ -284,7 +284,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
 </UL>
 
 <P><STRONG><a name="[48]"></a>__aeabi_ui2d</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, dfltui.o(.text))
@@ -292,7 +292,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
 </UL>
 
 <P><STRONG><a name="[4a]"></a>__aeabi_d2uiz</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, dfixui.o(.text))
@@ -300,7 +300,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
+<BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
 </UL>
 
 <P><STRONG><a name="[4b]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
@@ -308,9 +308,9 @@ Global Symbols
 <LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
-<P><STRONG><a name="[e4]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[e0]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
-<P><STRONG><a name="[e5]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
+<P><STRONG><a name="[e1]"></a>__I$use$fp</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, iusefp.o(.text), UNUSED)
 
 <P><STRONG><a name="[47]"></a>_double_round</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, depilogue.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = _double_round
@@ -335,13 +335,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[e6]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[e2]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[4c]"></a>__aeabi_llsl</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, llshl.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_double_epilogue
 </UL>
 
-<P><STRONG><a name="[e7]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[e3]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[4]"></a>BusFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, sysirqhandlers.o(i.BusFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
@@ -381,8 +381,8 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
-<P><STRONG><a name="[b6]"></a>EXTI_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32l1xx_exti.o(i.EXTI_ClearFlag))
-<BR><BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<P><STRONG><a name="[b2]"></a>EXTI_ClearFlag</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32l1xx_exti.o(i.EXTI_ClearFlag))
+<BR><BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
 </UL>
 
 <P><STRONG><a name="[4f]"></a>EXTI_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32l1xx_exti.o(i.EXTI_ClearITPendingBit))
@@ -399,34 +399,30 @@ Global Symbols
 <LI><a href="#[32]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI15_10_IRQHandler
 </UL>
 
-<P><STRONG><a name="[60]"></a>EXTI_Init</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, stm32l1xx_exti.o(i.EXTI_Init))
-<BR><BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
+<P><STRONG><a name="[5d]"></a>EXTI_Init</STRONG> (Thumb, 142 bytes, Stack size 0 bytes, stm32l1xx_exti.o(i.EXTI_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
 </UL>
 
-<P><STRONG><a name="[5a]"></a>GPIO_Init</STRONG> (Thumb, 144 bytes, Stack size 20 bytes, stm32l1xx_gpio.o(i.GPIO_Init))
+<P><STRONG><a name="[59]"></a>GPIO_Init</STRONG> (Thumb, 144 bytes, Stack size 20 bytes, stm32l1xx_gpio.o(i.GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuInit
 </UL>
 
-<P><STRONG><a name="[71]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 70 bytes, Stack size 20 bytes, stm32l1xx_gpio.o(i.GPIO_PinAFConfig))
+<P><STRONG><a name="[6d]"></a>GPIO_PinAFConfig</STRONG> (Thumb, 70 bytes, Stack size 20 bytes, stm32l1xx_gpio.o(i.GPIO_PinAFConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_PinAFConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
 </UL>
 
-<P><STRONG><a name="[5c]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32l1xx_gpio.o(i.GPIO_ReadInputDataBit))
-<BR><BR>[Called By]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuRead
+<P><STRONG><a name="[5f]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32l1xx_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
 </UL>
 
-<P><STRONG><a name="[62]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32l1xx_gpio.o(i.GPIO_ResetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
-</UL>
-
-<P><STRONG><a name="[63]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32l1xx_gpio.o(i.GPIO_SetBits))
-<BR><BR>[Called By]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
+<P><STRONG><a name="[60]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32l1xx_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
 </UL>
 
 <P><STRONG><a name="[50]"></a>GpioInit</STRONG> (Thumb, 62 bytes, Stack size 40 bytes, gpio.o(i.GpioInit))
@@ -435,13 +431,13 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuInit
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
-<LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_set_rf_switch_mode
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_init
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_set_rf_switch_mode
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_init
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
 </UL>
 
 <P><STRONG><a name="[52]"></a>GpioIoeInit</STRONG> (Thumb, 214 bytes, Stack size 40 bytes, gpio-ioe.o(i.GpioIoeInit))
@@ -454,251 +450,226 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
 
-<P><STRONG><a name="[56]"></a>GpioIoeRead</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, gpio-ioe.o(i.GpioIoeRead))
-<BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = GpioIoeRead &rArr; SX1509Read &rArr; SX1509ReadBuffer &rArr; I2cReadBuffer &rArr; I2cMcuReadBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
-</UL>
-<BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Read
-</UL>
-<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioRead
-</UL>
-
-<P><STRONG><a name="[66]"></a>GpioIoeSetInterrupt</STRONG> (Thumb, 6 bytes, Stack size 8 bytes, gpio-ioe.o(i.GpioIoeSetInterrupt))
+<P><STRONG><a name="[62]"></a>GpioIoeSetInterrupt</STRONG> (Thumb, 6 bytes, Stack size 8 bytes, gpio-ioe.o(i.GpioIoeSetInterrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GpioIoeSetInterrupt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetInterrupt
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetInterrupt
 </UL>
 
-<P><STRONG><a name="[57]"></a>GpioIoeWrite</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, gpio-ioe.o(i.GpioIoeWrite))
+<P><STRONG><a name="[56]"></a>GpioIoeWrite</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, gpio-ioe.o(i.GpioIoeWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Write
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Called By]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
 
 <P><STRONG><a name="[51]"></a>GpioMcuInit</STRONG> (Thumb, 146 bytes, Stack size 40 bytes, gpio-board.o(i.GpioMcuInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = GpioMcuInit &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockCmd
-<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
+<BR>[Calls]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_AHBPeriphClockCmd
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
 
-<P><STRONG><a name="[5b]"></a>GpioMcuRead</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gpio-board.o(i.GpioMcuRead))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GpioMcuRead
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
-</UL>
-<BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioRead
-</UL>
-
-<P><STRONG><a name="[5d]"></a>GpioMcuSetInterrupt</STRONG> (Thumb, 306 bytes, Stack size 40 bytes, gpio-board.o(i.GpioMcuSetInterrupt))
+<P><STRONG><a name="[5a]"></a>GpioMcuSetInterrupt</STRONG> (Thumb, 306 bytes, Stack size 40 bytes, gpio-board.o(i.GpioMcuSetInterrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = GpioMcuSetInterrupt &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSCFG_EXTILineConfig
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
-<LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
+<BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSCFG_EXTILineConfig
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetInterrupt
+<BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetInterrupt
 </UL>
 
-<P><STRONG><a name="[59]"></a>GpioMcuWrite</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, gpio-board.o(i.GpioMcuWrite))
+<P><STRONG><a name="[58]"></a>GpioMcuWrite</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, gpio-board.o(i.GpioMcuWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GpioMcuWrite
 </UL>
-<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+<BR>[Calls]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuInit
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
 
-<P><STRONG><a name="[64]"></a>GpioRead</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, gpio.o(i.GpioRead))
-<BR><BR>[Stack]<UL><LI>Max Depth = 276<LI>Call Chain = GpioRead &rArr; GpioIoeRead &rArr; SX1509Read &rArr; SX1509ReadBuffer &rArr; I2cReadBuffer &rArr; I2cMcuReadBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
-</UL>
-<BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuRead
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeRead
-</UL>
-<BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-</UL>
-
-<P><STRONG><a name="[65]"></a>GpioSetInterrupt</STRONG> (Thumb, 60 bytes, Stack size 32 bytes, gpio.o(i.GpioSetInterrupt))
+<P><STRONG><a name="[61]"></a>GpioSetInterrupt</STRONG> (Thumb, 60 bytes, Stack size 32 bytes, gpio.o(i.GpioSetInterrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = GpioSetInterrupt &rArr; GpioMcuSetInterrupt &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
-<LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeSetInterrupt
+<BR>[Calls]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
+<LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeSetInterrupt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276IoIrqInit
+<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276IoIrqInit
 </UL>
 
-<P><STRONG><a name="[67]"></a>GpioWrite</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, gpio.o(i.GpioWrite))
+<P><STRONG><a name="[63]"></a>GpioWrite</STRONG> (Thumb, 38 bytes, Stack size 16 bytes, gpio.o(i.GpioWrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 292<LI>Call Chain = GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
-<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeWrite
+<BR>[Calls]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuWrite
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_set_rf_switch_mode
-<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
-<LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_on
-<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_off
-<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_init
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
-</UL>
-
-<P><STRONG><a name="[79]"></a>I2C_AcknowledgeConfig</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_AcknowledgeConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_set_rf_switch_mode
+<LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_on
+<LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_off
+<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_init
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
 </UL>
 
-<P><STRONG><a name="[76]"></a>I2C_CheckEvent</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, stm32l1xx_i2c.o(i.I2C_CheckEvent))
+<P><STRONG><a name="[75]"></a>I2C_AcknowledgeConfig</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_AcknowledgeConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+</UL>
+
+<P><STRONG><a name="[72]"></a>I2C_CheckEvent</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, stm32l1xx_i2c.o(i.I2C_CheckEvent))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = I2C_CheckEvent
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
 
-<P><STRONG><a name="[6f]"></a>I2C_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuFormat
+<P><STRONG><a name="[6b]"></a>I2C_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuFormat
 </UL>
 
-<P><STRONG><a name="[68]"></a>I2C_DeInit</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, stm32l1xx_i2c.o(i.I2C_DeInit))
+<P><STRONG><a name="[64]"></a>I2C_DeInit</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, stm32l1xx_i2c.o(i.I2C_DeInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = I2C_DeInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
-</UL>
-
-<P><STRONG><a name="[75]"></a>I2C_GenerateSTART</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_GenerateSTART))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Called By]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
 </UL>
 
-<P><STRONG><a name="[7a]"></a>I2C_GenerateSTOP</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_GenerateSTOP))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<P><STRONG><a name="[71]"></a>I2C_GenerateSTART</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_GenerateSTART))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
 
-<P><STRONG><a name="[74]"></a>I2C_GetFlagStatus</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, stm32l1xx_i2c.o(i.I2C_GetFlagStatus))
+<P><STRONG><a name="[76]"></a>I2C_GenerateSTOP</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_GenerateSTOP))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+</UL>
+
+<P><STRONG><a name="[70]"></a>I2C_GetFlagStatus</STRONG> (Thumb, 58 bytes, Stack size 12 bytes, stm32l1xx_i2c.o(i.I2C_GetFlagStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = I2C_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
 
-<P><STRONG><a name="[6a]"></a>I2C_Init</STRONG> (Thumb, 218 bytes, Stack size 48 bytes, stm32l1xx_i2c.o(i.I2C_Init))
+<P><STRONG><a name="[66]"></a>I2C_Init</STRONG> (Thumb, 218 bytes, Stack size 48 bytes, stm32l1xx_i2c.o(i.I2C_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuFormat
-</UL>
-
-<P><STRONG><a name="[7b]"></a>I2C_ReceiveData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_ReceiveData))
-<BR><BR>[Called By]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuFormat
 </UL>
 
-<P><STRONG><a name="[77]"></a>I2C_Send7bitAddress</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_Send7bitAddress))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<P><STRONG><a name="[77]"></a>I2C_ReceiveData</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_ReceiveData))
+<BR><BR>[Called By]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
 
-<P><STRONG><a name="[78]"></a>I2C_SendData</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_SendData))
-<BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<P><STRONG><a name="[73]"></a>I2C_Send7bitAddress</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_Send7bitAddress))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
 
-<P><STRONG><a name="[6c]"></a>I2cInit</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, i2c.o(i.I2cInit))
+<P><STRONG><a name="[74]"></a>I2C_SendData</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32l1xx_i2c.o(i.I2C_SendData))
+<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+</UL>
+
+<P><STRONG><a name="[68]"></a>I2cInit</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, i2c.o(i.I2cInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
-<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuFormat
+<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
+<LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuFormat
 </UL>
-<BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cResetBus
+<BR>[Called By]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cResetBus
 <LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[6e]"></a>I2cMcuFormat</STRONG> (Thumb, 140 bytes, Stack size 48 bytes, i2c-board.o(i.I2cMcuFormat))
+<P><STRONG><a name="[6a]"></a>I2cMcuFormat</STRONG> (Thumb, 140 bytes, Stack size 48 bytes, i2c-board.o(i.I2cMcuFormat))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
-<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Cmd
+<BR>[Calls]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
+<LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Cmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
 </UL>
 
-<P><STRONG><a name="[6d]"></a>I2cMcuInit</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, i2c-board.o(i.I2cMcuInit))
+<P><STRONG><a name="[69]"></a>I2cMcuInit</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, i2c-board.o(i.I2cMcuInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44 + In Cycle
 <LI>Call Chain = I2cMcuInit &rArr;  GpioInit (Cycle)
 </UL>
-<BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
-<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_DeInit
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_DeInit
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
+<BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
 </UL>
 
-<P><STRONG><a name="[72]"></a>I2cMcuReadBuffer</STRONG> (Thumb, 644 bytes, Stack size 32 bytes, i2c-board.o(i.I2cMcuReadBuffer))
+<P><STRONG><a name="[6e]"></a>I2cMcuReadBuffer</STRONG> (Thumb, 644 bytes, Stack size 32 bytes, i2c-board.o(i.I2cMcuReadBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = I2cMcuReadBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_ReceiveData
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTOP
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_AcknowledgeConfig
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cResetBus
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_ReceiveData
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTOP
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_AcknowledgeConfig
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cResetBus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cReadBuffer
+<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cReadBuffer
 </UL>
 
-<P><STRONG><a name="[7c]"></a>I2cMcuWriteBuffer</STRONG> (Thumb, 382 bytes, Stack size 32 bytes, i2c-board.o(i.I2cMcuWriteBuffer))
+<P><STRONG><a name="[78]"></a>I2cMcuWriteBuffer</STRONG> (Thumb, 382 bytes, Stack size 32 bytes, i2c-board.o(i.I2cMcuWriteBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTOP
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
-<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cResetBus
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendData
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Send7bitAddress
+<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GetFlagStatus
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTOP
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_GenerateSTART
+<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_CheckEvent
+<LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cResetBus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cWriteBuffer
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cWriteBuffer
 </UL>
 
-<P><STRONG><a name="[7d]"></a>I2cReadBuffer</STRONG> (Thumb, 48 bytes, Stack size 32 bytes, i2c.o(i.I2cReadBuffer))
+<P><STRONG><a name="[79]"></a>I2cReadBuffer</STRONG> (Thumb, 48 bytes, Stack size 32 bytes, i2c.o(i.I2cReadBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = I2cReadBuffer &rArr; I2cMcuReadBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509ReadBuffer
+<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509ReadBuffer
 </UL>
 
-<P><STRONG><a name="[73]"></a>I2cResetBus</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, i2c.o(i.I2cResetBus))
+<P><STRONG><a name="[6f]"></a>I2cResetBus</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, i2c.o(i.I2cResetBus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
+<BR>[Calls]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
-<LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
+<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuReadBuffer
 </UL>
 
-<P><STRONG><a name="[7e]"></a>I2cWriteBuffer</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, i2c.o(i.I2cWriteBuffer))
+<P><STRONG><a name="[7a]"></a>I2cWriteBuffer</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, i2c.o(i.I2cWriteBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
+<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuWriteBuffer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509WriteBuffer
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509WriteBuffer
 </UL>
 
 <P><STRONG><a name="[3]"></a>MemManage_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, sysirqhandlers.o(i.MemManage_Handler))
@@ -707,83 +678,83 @@ Global Symbols
 <P><STRONG><a name="[1]"></a>NMI_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, sysirqhandlers.o(i.NMI_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
-<P><STRONG><a name="[61]"></a>NVIC_Init</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
+<P><STRONG><a name="[5e]"></a>NVIC_Init</STRONG> (Thumb, 106 bytes, Stack size 16 bytes, misc.o(i.NVIC_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
-<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
 </UL>
 
-<P><STRONG><a name="[af]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
+<P><STRONG><a name="[ab]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
 </UL>
 
-<P><STRONG><a name="[ae]"></a>NVIC_SetVectorTable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, misc.o(i.NVIC_SetVectorTable))
-<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
+<P><STRONG><a name="[aa]"></a>NVIC_SetVectorTable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, misc.o(i.NVIC_SetVectorTable))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
 </UL>
 
-<P><STRONG><a name="[58]"></a>RCC_AHBPeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_AHBPeriphClockCmd))
+<P><STRONG><a name="[57]"></a>RCC_AHBPeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_AHBPeriphClockCmd))
 <BR><BR>[Called By]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuInit
 </UL>
 
-<P><STRONG><a name="[70]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB1PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
-<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
+<P><STRONG><a name="[6c]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB1PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
+<LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cMcuInit
 </UL>
 
-<P><STRONG><a name="[69]"></a>RCC_APB1PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB1PeriphResetCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_DeInit
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+<P><STRONG><a name="[65]"></a>RCC_APB1PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB1PeriphResetCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_DeInit
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
 </UL>
 
-<P><STRONG><a name="[5e]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB2PeriphClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
-<LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
+<P><STRONG><a name="[5b]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB2PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
 </UL>
 
-<P><STRONG><a name="[9d]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB2PeriphResetCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+<P><STRONG><a name="[99]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_APB2PeriphResetCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
 </UL>
 
-<P><STRONG><a name="[6b]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 234 bytes, Stack size 20 bytes, stm32l1xx_rcc.o(i.RCC_GetClocksFreq))
+<P><STRONG><a name="[67]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 234 bytes, Stack size 20 bytes, stm32l1xx_rcc.o(i.RCC_GetClocksFreq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<BR>[Called By]<UL><LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
 </UL>
 
-<P><STRONG><a name="[ad]"></a>RCC_HCLKConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_HCLKConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
+<P><STRONG><a name="[a9]"></a>RCC_HCLKConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32l1xx_rcc.o(i.RCC_HCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
 </UL>
 
-<P><STRONG><a name="[85]"></a>SPI_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_spi.o(i.SPI_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFrequency
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFormat
+<P><STRONG><a name="[81]"></a>SPI_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_spi.o(i.SPI_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFrequency
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFormat
 </UL>
 
-<P><STRONG><a name="[86]"></a>SPI_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32l1xx_spi.o(i.SPI_Init))
+<P><STRONG><a name="[82]"></a>SPI_Init</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, stm32l1xx_spi.o(i.SPI_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFrequency
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFormat
+<BR>[Called By]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFrequency
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFormat
 </UL>
 
-<P><STRONG><a name="[7f]"></a>SX1276IoIrqInit</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, hal-sx1276.o(i.SX1276IoIrqInit))
+<P><STRONG><a name="[7b]"></a>SX1276IoIrqInit</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, hal-sx1276.o(i.SX1276IoIrqInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = SX1276IoIrqInit &rArr; GpioSetInterrupt &rArr; GpioMcuSetInterrupt &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetInterrupt
+<BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioSetInterrupt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
 </UL>
 
 <P><STRONG><a name="[53]"></a>SX1509Init</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, sx1509.o(i.SX1509Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 268<LI>Call Chain = SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509SetDeviceAddr
-<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Reset
+<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509SetDeviceAddr
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Reset
 </UL>
 <BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeInit
 </UL>
@@ -791,22 +762,21 @@ Global Symbols
 <P><STRONG><a name="[54]"></a>SX1509Read</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, sx1509.o(i.SX1509Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = SX1509Read &rArr; SX1509ReadBuffer &rArr; I2cReadBuffer &rArr; I2cMcuReadBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509ReadBuffer
+<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509ReadBuffer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeWrite
-<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeRead
+<BR>[Called By]<UL><LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeWrite
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeInit
 </UL>
 
-<P><STRONG><a name="[82]"></a>SX1509ReadBuffer</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, sx1509.o(i.SX1509ReadBuffer))
+<P><STRONG><a name="[7e]"></a>SX1509ReadBuffer</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, sx1509.o(i.SX1509ReadBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = SX1509ReadBuffer &rArr; I2cReadBuffer &rArr; I2cMcuReadBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cReadBuffer
+<BR>[Calls]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cReadBuffer
 </UL>
 <BR>[Called By]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Read
 </UL>
 
-<P><STRONG><a name="[81]"></a>SX1509Reset</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, sx1509.o(i.SX1509Reset))
+<P><STRONG><a name="[7d]"></a>SX1509Reset</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, sx1509.o(i.SX1509Reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 260<LI>Call Chain = SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Write
@@ -814,169 +784,169 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Init
 </UL>
 
-<P><STRONG><a name="[80]"></a>SX1509SetDeviceAddr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sx1509.o(i.SX1509SetDeviceAddr))
+<P><STRONG><a name="[7c]"></a>SX1509SetDeviceAddr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, sx1509.o(i.SX1509SetDeviceAddr))
 <BR><BR>[Called By]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Init
 </UL>
 
 <P><STRONG><a name="[55]"></a>SX1509Write</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, sx1509.o(i.SX1509Write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 252<LI>Call Chain = SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509WriteBuffer
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509WriteBuffer
 </UL>
-<BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Reset
-<LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeWrite
+<BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Reset
+<LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeWrite
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioIoeInit
 </UL>
 
-<P><STRONG><a name="[83]"></a>SX1509WriteBuffer</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, sx1509.o(i.SX1509WriteBuffer))
+<P><STRONG><a name="[7f]"></a>SX1509WriteBuffer</STRONG> (Thumb, 30 bytes, Stack size 24 bytes, sx1509.o(i.SX1509WriteBuffer))
 <BR><BR>[Stack]<UL><LI>Max Depth = 236<LI>Call Chain = SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cWriteBuffer
+<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cWriteBuffer
 </UL>
 <BR>[Called By]<UL><LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1509Write
 </UL>
 
-<P><STRONG><a name="[5f]"></a>SYSCFG_EXTILineConfig</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, stm32l1xx_syscfg.o(i.SYSCFG_EXTILineConfig))
+<P><STRONG><a name="[5c]"></a>SYSCFG_EXTILineConfig</STRONG> (Thumb, 60 bytes, Stack size 12 bytes, stm32l1xx_syscfg.o(i.SYSCFG_EXTILineConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SYSCFG_EXTILineConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
+<BR>[Called By]<UL><LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioMcuSetInterrupt
 </UL>
 
-<P><STRONG><a name="[84]"></a>SpiFormat</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, spi.o(i.SpiFormat))
+<P><STRONG><a name="[80]"></a>SpiFormat</STRONG> (Thumb, 156 bytes, Stack size 24 bytes, spi.o(i.SpiFormat))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SpiFormat &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
 </UL>
 
-<P><STRONG><a name="[87]"></a>SpiFrequency</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, spi.o(i.SpiFrequency))
+<P><STRONG><a name="[83]"></a>SpiFrequency</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, spi.o(i.SpiFrequency))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SpiFrequency &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
+<BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Init
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
 </UL>
 
 <P><STRONG><a name="[38]"></a>SystemInit</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, system_stm32l1xx.o(i.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SystemInit &rArr; SetSysClock
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
+<BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetSysClock
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(.text)
 </UL>
 <P><STRONG><a name="[26]"></a>TIM2_IRQHandler</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, timer-board.o(i.TIM2_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = TIM2_IRQHandler &rArr; TimerIrqHandler &rArr; TimerGetValue &rArr; TimerHwGetElapsedTime
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIncrementTickCounter
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIrqHandler
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIncrementTickCounter
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIrqHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
 <P><STRONG><a name="[27]"></a>TIM3_IRQHandler</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, timer-board.o(i.TIM3_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TIM3_IRQHandler &rArr; TIM_GetITStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIncrementDelayCounter
+<BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIncrementDelayCounter
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
-<P><STRONG><a name="[8b]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_ClearITPendingBit))
+<P><STRONG><a name="[87]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_ClearITPendingBit))
 <BR><BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 <LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[96]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
+<P><STRONG><a name="[92]"></a>TIM_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
 </UL>
 
-<P><STRONG><a name="[89]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32l1xx_tim.o(i.TIM_GetITStatus))
+<P><STRONG><a name="[85]"></a>TIM_GetITStatus</STRONG> (Thumb, 34 bytes, Stack size 12 bytes, stm32l1xx_tim.o(i.TIM_GetITStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TIM_GetITStatus
 </UL>
 <BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 <LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[95]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_ITConfig))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
+<P><STRONG><a name="[91]"></a>TIM_ITConfig</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_ITConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
 </UL>
 
-<P><STRONG><a name="[94]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_TimeBaseInit))
-<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
+<P><STRONG><a name="[90]"></a>TIM_TimeBaseInit</STRONG> (Thumb, 76 bytes, Stack size 0 bytes, stm32l1xx_tim.o(i.TIM_TimeBaseInit))
+<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
 </UL>
 
-<P><STRONG><a name="[8e]"></a>TimerGetValue</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, timer-sensornode.o(i.TimerGetValue))
+<P><STRONG><a name="[8a]"></a>TimerGetValue</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, timer-sensornode.o(i.TimerGetValue))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = TimerGetValue &rArr; TimerHwGetElapsedTime
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetElapsedTime
+<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetElapsedTime
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIrqHandler
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIrqHandler
 </UL>
 
-<P><STRONG><a name="[90]"></a>TimerHwDelayMs</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, timer-board.o(i.TimerHwDelayMs))
+<P><STRONG><a name="[8c]"></a>TimerHwDelayMs</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, timer-board.o(i.TimerHwDelayMs))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TimerHwDelayMs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetDelayValue
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetDelayValue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-</UL>
-
-<P><STRONG><a name="[91]"></a>TimerHwGetDelayValue</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, timer-board.o(i.TimerHwGetDelayValue))
-<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwDelayMs
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 </UL>
 
-<P><STRONG><a name="[8f]"></a>TimerHwGetElapsedTime</STRONG> (Thumb, 42 bytes, Stack size 12 bytes, timer-board.o(i.TimerHwGetElapsedTime))
+<P><STRONG><a name="[8d]"></a>TimerHwGetDelayValue</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, timer-board.o(i.TimerHwGetDelayValue))
+<BR><BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwDelayMs
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+</UL>
+
+<P><STRONG><a name="[8b]"></a>TimerHwGetElapsedTime</STRONG> (Thumb, 42 bytes, Stack size 12 bytes, timer-board.o(i.TimerHwGetElapsedTime))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = TimerHwGetElapsedTime
 </UL>
-<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetTimerValue
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetTimerValue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerGetValue
-</UL>
-
-<P><STRONG><a name="[92]"></a>TimerHwGetTimerValue</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, timer-board.o(i.TimerHwGetTimerValue))
-<BR><BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwStart
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetElapsedTime
+<BR>[Called By]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerGetValue
 </UL>
 
-<P><STRONG><a name="[93]"></a>TimerHwInit</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, timer-board.o(i.TimerHwInit))
+<P><STRONG><a name="[8e]"></a>TimerHwGetTimerValue</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, timer-board.o(i.TimerHwGetTimerValue))
+<BR><BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwStart
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetElapsedTime
+</UL>
+
+<P><STRONG><a name="[8f]"></a>TimerHwInit</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, timer-board.o(i.TimerHwInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TimerHwInit &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseInit
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
+<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sys_tick_init
+<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sys_tick_init
 </UL>
 
-<P><STRONG><a name="[97]"></a>TimerHwStart</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, timer-board.o(i.TimerHwStart))
+<P><STRONG><a name="[93]"></a>TimerHwStart</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, timer-board.o(i.TimerHwStart))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TimerHwStart
 </UL>
-<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetTimerValue
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetTimerValue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerSetTimeout
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerSetTimeout
 </UL>
 
-<P><STRONG><a name="[8d]"></a>TimerIncrementDelayCounter</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, timer-board.o(i.TimerIncrementDelayCounter))
+<P><STRONG><a name="[89]"></a>TimerIncrementDelayCounter</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, timer-board.o(i.TimerIncrementDelayCounter))
 <BR><BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
 </UL>
 
-<P><STRONG><a name="[8a]"></a>TimerIncrementTickCounter</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, timer-board.o(i.TimerIncrementTickCounter))
+<P><STRONG><a name="[86]"></a>TimerIncrementTickCounter</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, timer-board.o(i.TimerIncrementTickCounter))
 <BR><BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[8c]"></a>TimerIrqHandler</STRONG> (Thumb, 154 bytes, Stack size 16 bytes, timer-sensornode.o(i.TimerIrqHandler))
+<P><STRONG><a name="[88]"></a>TimerIrqHandler</STRONG> (Thumb, 154 bytes, Stack size 16 bytes, timer-sensornode.o(i.TimerIrqHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = TimerIrqHandler &rArr; TimerGetValue &rArr; TimerHwGetElapsedTime
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerGetValue
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerSetTimeout
+<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerGetValue
+<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerSetTimeout
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM2_IRQHandler
 </UL>
@@ -984,88 +954,88 @@ Global Symbols
 <P><STRONG><a name="[2f]"></a>USART1_IRQHandler</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, hal-uart.o(i.USART1_IRQHandler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = USART1_IRQHandler &rArr; USART_ITConfig
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReceiveData
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetITStatus
+<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ReceiveData
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_GetITStatus
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
-<P><STRONG><a name="[ba]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_usart.o(i.USART_Cmd))
-<BR><BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<P><STRONG><a name="[b6]"></a>USART_Cmd</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32l1xx_usart.o(i.USART_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
 </UL>
 
-<P><STRONG><a name="[9c]"></a>USART_DeInit</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, stm32l1xx_usart.o(i.USART_DeInit))
+<P><STRONG><a name="[98]"></a>USART_DeInit</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, stm32l1xx_usart.o(i.USART_DeInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USART_DeInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
-<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
+<BR>[Calls]<UL><LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
 </UL>
 
-<P><STRONG><a name="[99]"></a>USART_GetITStatus</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, stm32l1xx_usart.o(i.USART_GetITStatus))
+<P><STRONG><a name="[95]"></a>USART_GetITStatus</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, stm32l1xx_usart.o(i.USART_GetITStatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USART_GetITStatus
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[9a]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32l1xx_usart.o(i.USART_ITConfig))
+<P><STRONG><a name="[96]"></a>USART_ITConfig</STRONG> (Thumb, 74 bytes, Stack size 20 bytes, stm32l1xx_usart.o(i.USART_ITConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = USART_ITConfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
-<P><STRONG><a name="[9e]"></a>USART_Init</STRONG> (Thumb, 198 bytes, Stack size 48 bytes, stm32l1xx_usart.o(i.USART_Init))
+<P><STRONG><a name="[9a]"></a>USART_Init</STRONG> (Thumb, 198 bytes, Stack size 48 bytes, stm32l1xx_usart.o(i.USART_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
 </UL>
 
-<P><STRONG><a name="[9b]"></a>USART_ReceiveData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32l1xx_usart.o(i.USART_ReceiveData))
+<P><STRONG><a name="[97]"></a>USART_ReceiveData</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32l1xx_usart.o(i.USART_ReceiveData))
 <BR><BR>[Called By]<UL><LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_IRQHandler
 </UL>
 
 <P><STRONG><a name="[5]"></a>UsageFault_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, sysirqhandlers.o(i.UsageFault_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32l1xx_md.o(RESET)
 </UL>
-<P><STRONG><a name="[e8]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[e4]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[e9]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[e5]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[ea]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[e6]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[a1]"></a>app_check_sum</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, app.o(i.app_check_sum))
+<P><STRONG><a name="[9d]"></a>app_check_sum</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, app.o(i.app_check_sum))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = app_check_sum
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_tx_pkt
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_tx_pkt
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
-<P><STRONG><a name="[9f]"></a>app_evt</STRONG> (Thumb, 1386 bytes, Stack size 8 bytes, app.o(i.app_evt))
+<P><STRONG><a name="[9b]"></a>app_evt</STRONG> (Thumb, 1386 bytes, Stack size 8 bytes, app.o(i.app_evt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 420<LI>Call Chain = app_evt &rArr; app_tx_pkt &rArr; sx1276_send &rArr; sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_blink
-<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_tx_pkt
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_check_sum
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_blink
+<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_tx_pkt
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_check_sum
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a7]"></a>app_init</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, app.o(i.app_init))
+<P><STRONG><a name="[a3]"></a>app_init</STRONG> (Thumb, 110 bytes, Stack size 8 bytes, app.o(i.app_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 420<LI>Call Chain = app_init &rArr; sx1276_init &rArr; hal_sx1276_init &rArr; hal_spi_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1073,250 +1043,247 @@ Global Symbols
 <P><STRONG><a name="[3a]"></a>app_sx1276_event</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, app.o(i.app_sx1276_event))
 <BR>[Address Reference Count : 1]<UL><LI> app.o(i.app_init)
 </UL>
-<P><STRONG><a name="[a4]"></a>app_tx_pkt</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, app.o(i.app_tx_pkt))
+<P><STRONG><a name="[a0]"></a>app_tx_pkt</STRONG> (Thumb, 104 bytes, Stack size 16 bytes, app.o(i.app_tx_pkt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 412<LI>Call Chain = app_tx_pkt &rArr; sx1276_send &rArr; sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
-<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_check_sum
+<BR>[Calls]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
+<LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_check_sum
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
-<P><STRONG><a name="[ab]"></a>delay_ms</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, sys-tick.o(i.delay_ms))
+<P><STRONG><a name="[a7]"></a>delay_ms</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, sys-tick.o(i.delay_ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = delay_ms &rArr; TimerHwDelayMs
 </UL>
-<BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwDelayMs
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwDelayMs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
 </UL>
 
-<P><STRONG><a name="[ac]"></a>hal_clk_init</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, hal-sys-clk.o(i.hal_clk_init))
+<P><STRONG><a name="[a8]"></a>hal_clk_init</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, hal-sys-clk.o(i.hal_clk_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hal_clk_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_HCLKConfig
-<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetVectorTable
-<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_HCLKConfig
+<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetVectorTable
+<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[b0]"></a>hal_led_init</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, hal-led.o(i.hal_led_init))
+<P><STRONG><a name="[ac]"></a>hal_led_init</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, hal-led.o(i.hal_led_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = hal_led_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<BR>[Called By]<UL><LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
 </UL>
 
-<P><STRONG><a name="[b1]"></a>hal_led_off</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, hal-led.o(i.hal_led_off))
+<P><STRONG><a name="[ad]"></a>hal_led_off</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, hal-led.o(i.hal_led_off))
 <BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = hal_led_off &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
+<BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
 </UL>
 
-<P><STRONG><a name="[b2]"></a>hal_led_on</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, hal-led.o(i.hal_led_on))
+<P><STRONG><a name="[ae]"></a>hal_led_on</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, hal-led.o(i.hal_led_on))
 <BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = hal_led_on &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<BR>[Called By]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
 </UL>
 
-<P><STRONG><a name="[b3]"></a>hal_spi_init</STRONG> (Thumb, 254 bytes, Stack size 32 bytes, hal-spi.o(i.hal_spi_init))
+<P><STRONG><a name="[af]"></a>hal_spi_init</STRONG> (Thumb, 254 bytes, Stack size 32 bytes, hal-spi.o(i.hal_spi_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = hal_spi_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
-<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFrequency
-<LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFormat
+<BR>[Calls]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_Cmd
+<LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFrequency
+<LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpiFormat
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
 </UL>
 
-<P><STRONG><a name="[c9]"></a>hal_spi_wr</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, hal-spi.o(i.hal_spi_wr))
-<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<P><STRONG><a name="[c5]"></a>hal_spi_wr</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, hal-spi.o(i.hal_spi_wr))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
 </UL>
 
-<P><STRONG><a name="[d9]"></a>hal_sx1276_get_tx_port</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, hal-sx1276.o(i.hal_sx1276_get_tx_port))
-<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
+<P><STRONG><a name="[d5]"></a>hal_sx1276_get_tx_port</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, hal-sx1276.o(i.hal_sx1276_get_tx_port))
+<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
 </UL>
 
-<P><STRONG><a name="[b4]"></a>hal_sx1276_init</STRONG> (Thumb, 222 bytes, Stack size 16 bytes, hal-sx1276.o(i.hal_sx1276_init))
+<P><STRONG><a name="[b0]"></a>hal_sx1276_init</STRONG> (Thumb, 222 bytes, Stack size 16 bytes, hal-sx1276.o(i.hal_sx1276_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 396<LI>Call Chain = hal_sx1276_init &rArr; hal_spi_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearFlag
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276IoIrqInit
-<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTI_ClearFlag
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SX1276IoIrqInit
+<LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_init
+<LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
 </UL>
 
-<P><STRONG><a name="[b7]"></a>hal_sx1276_set_rf_switch_mode</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, hal-sx1276.o(i.hal_sx1276_set_rf_switch_mode))
+<P><STRONG><a name="[b3]"></a>hal_sx1276_set_rf_switch_mode</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, hal-sx1276.o(i.hal_sx1276_set_rf_switch_mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
 </UL>
 
-<P><STRONG><a name="[b8]"></a>hal_sys_tick_init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, hal-sys-tick.o(i.hal_sys_tick_init))
+<P><STRONG><a name="[b4]"></a>hal_sys_tick_init</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, hal-sys-tick.o(i.hal_sys_tick_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hal_sys_tick_init &rArr; TimerHwInit &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_tick_init
+<BR>[Called By]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_tick_init
 </UL>
 
-<P><STRONG><a name="[b9]"></a>hal_uart_init</STRONG> (Thumb, 216 bytes, Stack size 48 bytes, hal-uart.o(i.hal_uart_init))
+<P><STRONG><a name="[b5]"></a>hal_uart_init</STRONG> (Thumb, 216 bytes, Stack size 48 bytes, hal-uart.o(i.hal_uart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 396<LI>Call Chain = hal_uart_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
-<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
-<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
-<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
-<LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_DeInit
+<LI><a href="#[b6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
+<LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
 </UL>
 
-<P><STRONG><a name="[db]"></a>hal_uart_write_tx_reg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, hal-uart.o(i.hal_uart_write_tx_reg))
+<P><STRONG><a name="[d7]"></a>hal_uart_write_tx_reg</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, hal-uart.o(i.hal_uart_write_tx_reg))
 <BR><BR>[Called By]<UL><LI><a href="#[3d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_tx_handler
 </UL>
 
-<P><STRONG><a name="[c1]"></a>irq_disable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, hal-irq.o(i.irq_disable))
-<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<P><STRONG><a name="[bd]"></a>irq_disable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, hal-irq.o(i.irq_disable))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
 </UL>
 
-<P><STRONG><a name="[c2]"></a>irq_restore</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hal-irq.o(i.irq_restore))
-<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<P><STRONG><a name="[be]"></a>irq_restore</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hal-irq.o(i.irq_restore))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
 </UL>
 
-<P><STRONG><a name="[a0]"></a>led_blink</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, led.o(i.led_blink))
+<P><STRONG><a name="[9c]"></a>led_blink</STRONG> (Thumb, 44 bytes, Stack size 16 bytes, led.o(i.led_blink))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = led_blink &rArr; led_on &rArr; hal_led_on &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
-<P><STRONG><a name="[bc]"></a>led_evt</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, led.o(i.led_evt))
+<P><STRONG><a name="[b8]"></a>led_evt</STRONG> (Thumb, 68 bytes, Stack size 8 bytes, led.o(i.led_evt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = led_evt &rArr; led_off &rArr; hal_led_off &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
-<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
+<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_off
+<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;millis
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[be]"></a>led_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, led.o(i.led_init))
+<P><STRONG><a name="[ba]"></a>led_init</STRONG> (Thumb, 24 bytes, Stack size 8 bytes, led.o(i.led_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 372<LI>Call Chain = led_init &rArr; hal_led_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_init
+<BR>[Calls]<UL><LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[bd]"></a>led_off</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.led_off))
+<P><STRONG><a name="[b9]"></a>led_off</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.led_off))
 <BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = led_off &rArr; hal_led_off &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_off
+<BR>[Calls]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_off
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_evt
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_evt
 </UL>
 
-<P><STRONG><a name="[bb]"></a>led_on</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.led_on))
+<P><STRONG><a name="[b7]"></a>led_on</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, led.o(i.led_on))
 <BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = led_on &rArr; hal_led_on &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_on
+<BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_led_on
 </UL>
-<BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_blink
+<BR>[Called By]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_blink
 </UL>
 
-<P><STRONG><a name="[37]"></a>main</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, main.o(i.main))
+<P><STRONG><a name="[37]"></a>main</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 436<LI>Call Chain = main &rArr; app_init &rArr; sx1276_init &rArr; hal_sx1276_init &rArr; hal_spi_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_tick_init
-<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_on
-<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
-<LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_evt
-<LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
-<LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioRead
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Calls]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uart_init
+<LI><a href="#[bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_tick_init
+<LI><a href="#[ba]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_init
+<LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_evt
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_clk_init
+<LI><a href="#[68]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2cInit
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[a3]"></a>millis</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, sys-tick.o(i.millis))
+<P><STRONG><a name="[9f]"></a>millis</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, sys-tick.o(i.millis))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = millis
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetDelayValue
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwGetDelayValue
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
 </UL>
-<BR>[Called By]<UL><LI><a href="#[bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_evt
-<LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_blink
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_evt
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;led_blink
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
-<P><STRONG><a name="[a8]"></a>sx1276_init</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_init))
+<P><STRONG><a name="[a4]"></a>sx1276_init</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 412<LI>Call Chain = sx1276_init &rArr; hal_sx1276_init &rArr; hal_spi_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_modem
-<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
+<BR>[Calls]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_init
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_modem
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_reset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
 </UL>
 
 <P><STRONG><a name="[3e]"></a>sx1276_irq_dio0</STRONG> (Thumb, 372 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_irq_dio0))
 <BR><BR>[Stack]<UL><LI>Max Depth = 348<LI>Call Chain = sx1276_irq_dio0 &rArr; sx1276_read_pkt_snr_rssi &rArr; sx1276_read &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_pkt_snr_rssi
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_fifo
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_pkt_snr_rssi
+<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_fifo
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> hal-sx1276.o(.data)
 </UL>
 <P><STRONG><a name="[3f]"></a>sx1276_irq_dio1</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_irq_dio1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_irq_dio1 &rArr; sx1276_write &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> hal-sx1276.o(.data)
 </UL>
@@ -1329,291 +1296,291 @@ Global Symbols
 <P><STRONG><a name="[42]"></a>sx1276_irq_dio4</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, sx1276.o(i.sx1276_irq_dio4))
 <BR>[Address Reference Count : 1]<UL><LI> hal-sx1276.o(.data)
 </UL>
-<P><STRONG><a name="[c5]"></a>sx1276_read</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_read))
+<P><STRONG><a name="[c1]"></a>sx1276_read</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = sx1276_read &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_irq_dio1
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_irq_dio0
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_pkt_snr_rssi
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_pkt_snr_rssi
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
 </UL>
 
-<P><STRONG><a name="[ca]"></a>sx1276_read_burst</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_read_burst))
+<P><STRONG><a name="[c6]"></a>sx1276_read_burst</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_read_burst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = sx1276_read_burst &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_fifo
+<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_fifo
 </UL>
 
-<P><STRONG><a name="[c8]"></a>sx1276_read_fifo</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_read_fifo))
+<P><STRONG><a name="[c4]"></a>sx1276_read_fifo</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_read_fifo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = sx1276_read_fifo &rArr; sx1276_read_burst &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
+<BR>[Calls]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read_burst
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_irq_dio0
 </UL>
 
-<P><STRONG><a name="[c6]"></a>sx1276_read_pkt_snr_rssi</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_read_pkt_snr_rssi))
+<P><STRONG><a name="[c2]"></a>sx1276_read_pkt_snr_rssi</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_read_pkt_snr_rssi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = sx1276_read_pkt_snr_rssi &rArr; sx1276_read &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<BR>[Calls]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_irq_dio0
 </UL>
 
-<P><STRONG><a name="[a6]"></a>sx1276_receive</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_receive))
+<P><STRONG><a name="[a2]"></a>sx1276_receive</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_receive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 396<LI>Call Chain = sx1276_receive &rArr; sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_timeout_to_symbol
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_symbol_timeout
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble_reg
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_timeout_to_symbol
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_symbol_timeout
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble_reg
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
-<P><STRONG><a name="[c3]"></a>sx1276_reset</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_reset))
+<P><STRONG><a name="[bf]"></a>sx1276_reset</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 364<LI>Call Chain = sx1276_reset &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
 </UL>
 
-<P><STRONG><a name="[cc]"></a>sx1276_rmw</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_rmw))
+<P><STRONG><a name="[c8]"></a>sx1276_rmw</STRONG> (Thumb, 100 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_rmw))
 <BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_symbol_timeout
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_sf
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_modem
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_header_mode
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_crc_mode
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_coding_rate
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_bandwidth
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_low_datarate_optimization
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_symbol_timeout
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_sf
+<LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_modem
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_header_mode
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_crc_mode
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_coding_rate
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_bandwidth
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_low_datarate_optimization
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
 </UL>
 
-<P><STRONG><a name="[aa]"></a>sx1276_send</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_send))
+<P><STRONG><a name="[a6]"></a>sx1276_send</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_send))
 <BR><BR>[Stack]<UL><LI>Max Depth = 396<LI>Call Chain = sx1276_send &rArr; sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_fifo
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble_reg
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_fifo
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble_reg
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_tx_pkt
+<BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_tx_pkt
 </UL>
 
-<P><STRONG><a name="[d0]"></a>sx1276_set_bandwidth</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_bandwidth))
+<P><STRONG><a name="[cc]"></a>sx1276_set_bandwidth</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_bandwidth))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_set_bandwidth &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[d1]"></a>sx1276_set_channel</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_set_channel))
+<P><STRONG><a name="[cd]"></a>sx1276_set_channel</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_set_channel))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = sx1276_set_channel &rArr; sx1276_write &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[d2]"></a>sx1276_set_coding_rate</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_coding_rate))
+<P><STRONG><a name="[ce]"></a>sx1276_set_coding_rate</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_coding_rate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_set_coding_rate &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[a9]"></a>sx1276_set_config</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_config))
+<P><STRONG><a name="[a5]"></a>sx1276_set_config</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_config))
 <BR><BR>[Stack]<UL><LI>Max Depth = 388<LI>Call Chain = sx1276_set_config &rArr; sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_sf
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_header_mode
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_crc_mode
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_coding_rate
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_bandwidth
-<LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_low_datarate_optimization
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_sf
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_header_mode
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_crc_mode
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_coding_rate
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_bandwidth
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_low_datarate_optimization
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<BR>[Called By]<UL><LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
 </UL>
 
-<P><STRONG><a name="[d5]"></a>sx1276_set_crc_mode</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_crc_mode))
+<P><STRONG><a name="[d1]"></a>sx1276_set_crc_mode</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_crc_mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_set_crc_mode &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[d4]"></a>sx1276_set_header_mode</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_header_mode))
+<P><STRONG><a name="[d0]"></a>sx1276_set_header_mode</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_header_mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_set_header_mode &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[a5]"></a>sx1276_set_mode</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_set_mode))
+<P><STRONG><a name="[a1]"></a>sx1276_set_mode</STRONG> (Thumb, 140 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_set_mode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 380<LI>Call Chain = sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_set_rf_switch_mode
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
+<BR>[Calls]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_set_rf_switch_mode
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_modem
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
-<LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
+<BR>[Called By]<UL><LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_modem
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<LI><a href="#[a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_init
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;app_evt
 </UL>
 
-<P><STRONG><a name="[c4]"></a>sx1276_set_modem</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_modem))
+<P><STRONG><a name="[c0]"></a>sx1276_set_modem</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_modem))
 <BR><BR>[Stack]<UL><LI>Max Depth = 388<LI>Call Chain = sx1276_set_modem &rArr; sx1276_set_mode &rArr; hal_sx1276_set_rf_switch_mode &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
-<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_mode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
-</UL>
-
-<P><STRONG><a name="[d7]"></a>sx1276_set_preamble</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sx1276.o(i.sx1276_set_preamble))
-<BR><BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_init
 </UL>
 
-<P><STRONG><a name="[cb]"></a>sx1276_set_preamble_reg</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_preamble_reg))
+<P><STRONG><a name="[d3]"></a>sx1276_set_preamble</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, sx1276.o(i.sx1276_set_preamble))
+<BR><BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+</UL>
+
+<P><STRONG><a name="[c7]"></a>sx1276_set_preamble_reg</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_preamble_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = sx1276_set_preamble_reg &rArr; sx1276_write &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
 </UL>
 
-<P><STRONG><a name="[d3]"></a>sx1276_set_sf</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_sf))
+<P><STRONG><a name="[cf]"></a>sx1276_set_sf</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_sf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_set_sf &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[ce]"></a>sx1276_set_symbol_timeout</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_symbol_timeout))
+<P><STRONG><a name="[ca]"></a>sx1276_set_symbol_timeout</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, sx1276.o(i.sx1276_set_symbol_timeout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 324<LI>Call Chain = sx1276_set_symbol_timeout &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
 </UL>
 
-<P><STRONG><a name="[d6]"></a>sx1276_set_tx_power</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_set_tx_power))
+<P><STRONG><a name="[d2]"></a>sx1276_set_tx_power</STRONG> (Thumb, 136 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_set_tx_power))
 <BR><BR>[Stack]<UL><LI>Max Depth = 340<LI>Call Chain = sx1276_set_tx_power &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_get_tx_port
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sx1276_get_tx_port
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 
-<P><STRONG><a name="[cd]"></a>sx1276_timeout_to_symbol</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, sx1276.o(i.sx1276_timeout_to_symbol))
+<P><STRONG><a name="[c9]"></a>sx1276_timeout_to_symbol</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, sx1276.o(i.sx1276_timeout_to_symbol))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = sx1276_timeout_to_symbol
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<BR>[Called By]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
 </UL>
 
-<P><STRONG><a name="[c7]"></a>sx1276_write</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_write))
+<P><STRONG><a name="[c3]"></a>sx1276_write</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 308<LI>Call Chain = sx1276_write &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_irq_dio1
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_irq_dio0
-<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_symbol_timeout
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_sf
-<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble_reg
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
-<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
-<LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
-<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_tx_power
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_symbol_timeout
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_sf
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_preamble_reg
+<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_channel
+<LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
+<LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_receive
 </UL>
 
-<P><STRONG><a name="[da]"></a>sx1276_write_burst</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_write_burst))
+<P><STRONG><a name="[d6]"></a>sx1276_write_burst</STRONG> (Thumb, 68 bytes, Stack size 24 bytes, sx1276.o(i.sx1276_write_burst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = sx1276_write_burst &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
-<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
-<LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_spi_wr
+<LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_restore
+<LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;irq_disable
+<LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GpioWrite
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_fifo
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_fifo
 </UL>
 
-<P><STRONG><a name="[cf]"></a>sx1276_write_fifo</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_write_fifo))
+<P><STRONG><a name="[cb]"></a>sx1276_write_fifo</STRONG> (Thumb, 18 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_write_fifo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = sx1276_write_fifo &rArr; sx1276_write_burst &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
+<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_write_burst
 </UL>
-<BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
+<BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_send
 </UL>
 
-<P><STRONG><a name="[bf]"></a>sys_tick_init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, sys-tick.o(i.sys_tick_init))
+<P><STRONG><a name="[bb]"></a>sys_tick_init</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, sys-tick.o(i.sys_tick_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = sys_tick_init &rArr; hal_sys_tick_init &rArr; TimerHwInit &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sys_tick_init
+<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_sys_tick_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[c0]"></a>uart_init</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, uart.o(i.uart_init))
+<P><STRONG><a name="[bc]"></a>uart_init</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, uart.o(i.uart_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 404<LI>Call Chain = uart_init &rArr; hal_uart_init &rArr; GpioInit &rArr; GpioIoeInit &rArr; SX1509Init &rArr; SX1509Reset &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
+<BR>[Calls]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1624,22 +1591,22 @@ Global Symbols
 <P><STRONG><a name="[3d]"></a>uart_tx_handler</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, uart.o(i.uart_tx_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = uart_tx_handler
 </UL>
-<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_write_tx_reg
+<BR>[Calls]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hal_uart_write_tx_reg
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> uart.o(i.uart_init)
 </UL><P>
 <H3>
 Local Symbols
 </H3>
-<P><STRONG><a name="[98]"></a>TimerSetTimeout</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, timer-sensornode.o(i.TimerSetTimeout))
+<P><STRONG><a name="[94]"></a>TimerSetTimeout</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, timer-sensornode.o(i.TimerSetTimeout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TimerSetTimeout &rArr; TimerHwStart
 </UL>
-<BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwStart
+<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerHwStart
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIrqHandler
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TimerIrqHandler
 </UL>
 
-<P><STRONG><a name="[88]"></a>SetSysClock</STRONG> (Thumb, 258 bytes, Stack size 12 bytes, system_stm32l1xx.o(i.SetSysClock))
+<P><STRONG><a name="[84]"></a>SetSysClock</STRONG> (Thumb, 258 bytes, Stack size 12 bytes, system_stm32l1xx.o(i.SetSysClock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = SetSysClock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
@@ -1648,12 +1615,12 @@ Local Symbols
 <P><STRONG><a name="[3b]"></a>sys_tick_handler</STRONG> (Thumb, 66 bytes, Stack size 0 bytes, sys-tick.o(i.sys_tick_handler))
 <BR>[Address Reference Count : 1]<UL><LI> sys-tick.o(i.sys_tick_init)
 </UL>
-<P><STRONG><a name="[d8]"></a>sx1276_set_low_datarate_optimization</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_set_low_datarate_optimization))
+<P><STRONG><a name="[d4]"></a>sx1276_set_low_datarate_optimization</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, sx1276.o(i.sx1276_set_low_datarate_optimization))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = sx1276_set_low_datarate_optimization &rArr; sx1276_rmw &rArr; GpioWrite &rArr; GpioIoeWrite &rArr; SX1509Write &rArr; SX1509WriteBuffer &rArr; I2cWriteBuffer &rArr; I2cMcuWriteBuffer &rArr; I2cResetBus &rArr; I2cInit &rArr; I2cMcuFormat &rArr; I2C_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
+<BR>[Calls]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_rmw
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
+<BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sx1276_set_config
 </UL>
 <P>
 <H3>

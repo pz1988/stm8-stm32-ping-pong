@@ -479,12 +479,12 @@ ARM Macro Assembler    Page 8
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\object
 s\startup_stm32l1xx_md.d -o.\objects\startup_stm32l1xx_md.o -I"C:\documents\fw\
-stm8~stm32 20150723\prj\SensorNode\ping-pong\keil\RTE" -IC:\Keil_v5\ARM\PACK\Ke
-il\STM32L1xx_DFP\1.0.2\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefin
-e="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSIO
-N SETA 513" --predefine="STM32L1XX_MD SETA 1" --list=.\listings\startup_stm32l1
-xx_md.lst ..\..\..\..\src\hal\SensorNode\stm32_board\cmsis\arm-std\startup_stm3
-2l1xx_md.s
+stm8~stm32 migration\prj\SensorNode\ping-pong\keil\RTE" -IC:\Keil_v5\ARM\PACK\K
+eil\STM32L1xx_DFP\1.0.2\Device\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefi
+ne="__EVAL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSI
+ON SETA 513" --predefine="STM32L1XX_MD SETA 1" --list=.\listings\startup_stm32l
+1xx_md.lst ..\..\..\..\src\hal\SensorNode\stm32_board\cmsis\arm-std\startup_stm
+32l1xx_md.s
 
 
 

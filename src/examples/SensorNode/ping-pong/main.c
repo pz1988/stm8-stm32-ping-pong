@@ -23,13 +23,6 @@ Maintainer: Jiapeng Li
 #include "led.h"
 #include "app.h"
 
-//for debugger
-uint8_t read_reg = 0x08;
-uint8_t pre_read_reg = 0x00;
-Gpio_t ext_red;
-Gpio_t ext_green;
-//end debugger
-
 int main()
 {
   	uart_config_t uart_conf;
@@ -51,20 +44,8 @@ int main()
     app_init();
 	
 	DISABLE_IRQ();
-	 led_init();
-	 //for debugger
-   read_reg = GpioRead( &Led1 );
-	 
-	 led_on(LED0);
-	 read_reg = GpioRead( &Led1 );
-//		   //for debugger
-//	   GpioInit( &ext_red, TEST_POINT2, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
-//	   GpioInit( &ext_green, TEST_POINT3, PIN_OUTPUT, PIN_PUSH_PULL, PIN_NO_PULL, 0 );
-//	 
-//	   GpioWrite( &ext_red, 1 );
-//	 GpioWrite( &ext_green, 1 ); 
-//    //end debugger
-//    
+	led_init();
+ 
 	 
 	while(1){
         /** polling all events */
